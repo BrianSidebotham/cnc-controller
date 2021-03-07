@@ -1,0 +1,106 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bjs-connectors:DB25 J?
+U 1 1 5FE3407A
+P 1550 1000
+F 0 "J?" H 1358 1213 50  0000 C CNN
+F 1 "DB25" H 1358 1122 50  0000 C CNN
+F 2 "" H 1550 1000 50  0001 C CNN
+F 3 "" H 1550 1000 50  0001 C CNN
+	1    1550 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-connectors:DB25 J?
+U 1 1 5FE37EC6
+P 1550 3900
+F 0 "J?" H 1358 4113 50  0000 C CNN
+F 1 "DB25" H 1358 4022 50  0000 C CNN
+F 2 "" H 1550 3900 50  0001 C CNN
+F 3 "" H 1550 3900 50  0001 C CNN
+	1    1550 3900
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 4500 2450 1500 600 
+U 5FE3CAD9
+F0 "axis-z" 39
+F1 "axis-control.sch" 39
+F2 "STEP+" I L 4500 2550 50 
+F3 "STEP-" I L 4500 2650 50 
+F4 "STEP" I R 6000 2600 50 
+F5 "DIR+" I L 4500 2850 50 
+F6 "DIR-" I L 4500 2950 50 
+F7 "DIR" I R 6000 2900 50 
+$EndSheet
+$Sheet
+S 4500 1700 1500 600 
+U 605151E7
+F0 "axis-y" 39
+F1 "axis-control.sch" 39
+F2 "STEP+" I L 4500 1800 50 
+F3 "STEP-" I L 4500 1900 50 
+F4 "STEP" I R 6000 1850 50 
+F5 "DIR+" I L 4500 2100 50 
+F6 "DIR-" I L 4500 2200 50 
+F7 "DIR" I R 6000 2150 50 
+$EndSheet
+$Sheet
+S 4500 950  1500 600 
+U 60515B5F
+F0 "axis-x" 39
+F1 "axis-control.sch" 39
+F2 "STEP+" I L 4500 1050 50 
+F3 "STEP-" I L 4500 1150 50 
+F4 "STEP" I R 6000 1100 50 
+F5 "DIR+" I L 4500 1350 50 
+F6 "DIR-" I L 4500 1450 50 
+F7 "DIR" I R 6000 1400 50 
+$EndSheet
+$Sheet
+S 4500 3200 1500 600 
+U 605160F4
+F0 "axis-a" 39
+F1 "axis-control.sch" 39
+F2 "STEP+" I L 4500 3300 50 
+F3 "STEP-" I L 4500 3400 50 
+F4 "STEP" I R 6000 3350 50 
+F5 "DIR+" I L 4500 3600 50 
+F6 "DIR-" I L 4500 3700 50 
+F7 "DIR" I R 6000 3650 50 
+$EndSheet
+$Sheet
+S 4500 3950 1500 600 
+U 60517482
+F0 "Sheet60517481" 50
+F1 "filter.sch" 50
+F2 "PWM+" I L 4500 4050 50 
+F3 "PWM-" I L 4500 4150 50 
+F4 "0-10V" I R 6000 4100 50 
+$EndSheet
+$Comp
+L bjs-connectors:generic-2 J?
+U 1 1 60608CE9
+P 8400 1100
+F 0 "J?" H 8468 1105 50  0000 L CNN
+F 1 "generic-2" H 8468 1014 50  0000 L CNN
+F 2 "" H 8400 1100 50  0001 C CNN
+F 3 "" H 8400 1100 50  0001 C CNN
+	1    8400 1100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

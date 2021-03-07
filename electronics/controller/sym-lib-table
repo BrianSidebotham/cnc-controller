@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name bjs-passives)(type Legacy)(uri ${KICAD_BJS_KICAD_PARTS}/symbols/bjs-passives.lib)(options "")(descr ""))
+  (lib (name bjs-connectors)(type Legacy)(uri ${KICAD_BJS_KICAD_PARTS}/symbols/bjs-connectors.lib)(options "")(descr ""))
+)

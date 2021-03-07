@@ -1,0 +1,7 @@
+.*
+!.gitignore
+__pycache__
+*.pyc
+*.bck
+*.sch-bak
+*.kicad_pcb-bak
