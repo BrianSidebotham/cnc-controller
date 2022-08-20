@@ -1,0 +1,1217 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L bjs-passives:RESISTOR R15
+U 1 1 61E3E152
+P 4550 1600
+AR Path="/61E3B1C4/61E3E152" Ref="R15"  Part="1" 
+AR Path="/620E267A/61E3E152" Ref="R?"  Part="1" 
+AR Path="/62104863/61E3E152" Ref="R?"  Part="1" 
+AR Path="/62298682/61E3E152" Ref="R39"  Part="1" 
+AR Path="/624053F2/61E3E152" Ref="R63"  Part="1" 
+F 0 "R15" H 4550 1771 39  0000 C CNN
+F 1 "680R" H 4550 1696 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 1600 50  0001 C CNN
+F 3 "" H 4550 1600 50  0001 C CNN
+	1    4550 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R23
+U 1 1 61E3E732
+P 5950 1600
+AR Path="/61E3B1C4/61E3E732" Ref="R23"  Part="1" 
+AR Path="/620E267A/61E3E732" Ref="R?"  Part="1" 
+AR Path="/62104863/61E3E732" Ref="R?"  Part="1" 
+AR Path="/62298682/61E3E732" Ref="R47"  Part="1" 
+AR Path="/624053F2/61E3E732" Ref="R71"  Part="1" 
+F 0 "R23" H 5950 1429 39  0000 C CNN
+F 1 "1k" H 5950 1504 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 1600 50  0001 C CNN
+F 3 "" H 5950 1600 50  0001 C CNN
+	1    5950 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U4
+U 1 1 61E3F130
+P 6400 1700
+AR Path="/61E3B1C4/61E3F130" Ref="U4"  Part="1" 
+AR Path="/620E267A/61E3F130" Ref="U?"  Part="1" 
+AR Path="/62104863/61E3F130" Ref="U?"  Part="1" 
+AR Path="/62298682/61E3F130" Ref="U6"  Part="1" 
+AR Path="/624053F2/61E3F130" Ref="U8"  Part="1" 
+F 0 "U4" H 6400 1991 39  0000 C CNN
+F 1 "74HC14" H 6400 1916 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 1700 39  0001 C CNN
+F 3 "" H 6400 1700 39  0001 C CNN
+	1    6400 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 1700 6100 1700
+Wire Wire Line
+	6100 1700 6100 1600
+Wire Wire Line
+	6100 1700 5500 1700
+Connection ~ 6100 1700
+Wire Wire Line
+	5800 1600 5700 1600
+Wire Wire Line
+	4900 1800 4800 1800
+Wire Wire Line
+	4700 1600 4900 1600
+Wire Wire Line
+	5500 1800 5600 1800
+$Comp
+L bjs-passives:RESISTOR R16
+U 1 1 61E49877
+P 4550 2200
+AR Path="/61E3B1C4/61E49877" Ref="R16"  Part="1" 
+AR Path="/620E267A/61E49877" Ref="R?"  Part="1" 
+AR Path="/62104863/61E49877" Ref="R?"  Part="1" 
+AR Path="/62298682/61E49877" Ref="R40"  Part="1" 
+AR Path="/624053F2/61E49877" Ref="R64"  Part="1" 
+F 0 "R16" H 4550 2371 39  0000 C CNN
+F 1 "680R" H 4550 2296 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 2200 50  0001 C CNN
+F 3 "" H 4550 2200 50  0001 C CNN
+	1    4550 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R24
+U 1 1 61E4987D
+P 5950 2200
+AR Path="/61E3B1C4/61E4987D" Ref="R24"  Part="1" 
+AR Path="/620E267A/61E4987D" Ref="R?"  Part="1" 
+AR Path="/62104863/61E4987D" Ref="R?"  Part="1" 
+AR Path="/62298682/61E4987D" Ref="R48"  Part="1" 
+AR Path="/624053F2/61E4987D" Ref="R72"  Part="1" 
+F 0 "R24" H 5950 2029 39  0000 C CNN
+F 1 "1k" H 5950 2104 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 2200 50  0001 C CNN
+F 3 "" H 5950 2200 50  0001 C CNN
+	1    5950 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U4
+U 2 1 61E49883
+P 6400 2300
+AR Path="/61E3B1C4/61E49883" Ref="U4"  Part="2" 
+AR Path="/620E267A/61E49883" Ref="U?"  Part="2" 
+AR Path="/62104863/61E49883" Ref="U?"  Part="2" 
+AR Path="/62298682/61E49883" Ref="U6"  Part="2" 
+AR Path="/624053F2/61E49883" Ref="U8"  Part="2" 
+F 0 "U4" H 6400 2591 39  0000 C CNN
+F 1 "74HC14" H 6400 2516 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 2300 39  0001 C CNN
+F 3 "" H 6400 2300 39  0001 C CNN
+	2    6400 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2300 6100 2300
+Wire Wire Line
+	6100 2300 6100 2200
+Wire Wire Line
+	6100 2300 5500 2300
+Connection ~ 6100 2300
+Wire Wire Line
+	5800 2200 5700 2200
+Wire Wire Line
+	4900 2400 4800 2400
+Wire Wire Line
+	4700 2200 4900 2200
+Wire Wire Line
+	5500 2400 5600 2400
+$Comp
+L bjs-passives:RESISTOR R17
+U 1 1 61E4BA70
+P 4550 2800
+AR Path="/61E3B1C4/61E4BA70" Ref="R17"  Part="1" 
+AR Path="/620E267A/61E4BA70" Ref="R?"  Part="1" 
+AR Path="/62104863/61E4BA70" Ref="R?"  Part="1" 
+AR Path="/62298682/61E4BA70" Ref="R41"  Part="1" 
+AR Path="/624053F2/61E4BA70" Ref="R65"  Part="1" 
+F 0 "R17" H 4550 2971 39  0000 C CNN
+F 1 "680R" H 4550 2896 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 2800 50  0001 C CNN
+F 3 "" H 4550 2800 50  0001 C CNN
+	1    4550 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R25
+U 1 1 61E4BA76
+P 5950 2800
+AR Path="/61E3B1C4/61E4BA76" Ref="R25"  Part="1" 
+AR Path="/620E267A/61E4BA76" Ref="R?"  Part="1" 
+AR Path="/62104863/61E4BA76" Ref="R?"  Part="1" 
+AR Path="/62298682/61E4BA76" Ref="R49"  Part="1" 
+AR Path="/624053F2/61E4BA76" Ref="R73"  Part="1" 
+F 0 "R25" H 5950 2629 39  0000 C CNN
+F 1 "1k" H 5950 2704 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 2800 50  0001 C CNN
+F 3 "" H 5950 2800 50  0001 C CNN
+	1    5950 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U4
+U 3 1 61E4BA7C
+P 6400 2900
+AR Path="/61E3B1C4/61E4BA7C" Ref="U4"  Part="3" 
+AR Path="/620E267A/61E4BA7C" Ref="U?"  Part="3" 
+AR Path="/62104863/61E4BA7C" Ref="U?"  Part="3" 
+AR Path="/62298682/61E4BA7C" Ref="U6"  Part="3" 
+AR Path="/624053F2/61E4BA7C" Ref="U8"  Part="3" 
+F 0 "U4" H 6400 3191 39  0000 C CNN
+F 1 "74HC14" H 6400 3116 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 2900 39  0001 C CNN
+F 3 "" H 6400 2900 39  0001 C CNN
+	3    6400 2900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2900 6100 2900
+Wire Wire Line
+	6100 2900 6100 2800
+Wire Wire Line
+	6100 2900 5500 2900
+Connection ~ 6100 2900
+Wire Wire Line
+	5800 2800 5700 2800
+Wire Wire Line
+	4900 3000 4800 3000
+Wire Wire Line
+	4700 2800 4900 2800
+Wire Wire Line
+	5500 3000 5600 3000
+$Comp
+L bjs-passives:RESISTOR R18
+U 1 1 61E53AB3
+P 4550 3400
+AR Path="/61E3B1C4/61E53AB3" Ref="R18"  Part="1" 
+AR Path="/620E267A/61E53AB3" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AB3" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AB3" Ref="R42"  Part="1" 
+AR Path="/624053F2/61E53AB3" Ref="R66"  Part="1" 
+F 0 "R18" H 4550 3571 39  0000 C CNN
+F 1 "680R" H 4550 3496 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 3400 50  0001 C CNN
+F 3 "" H 4550 3400 50  0001 C CNN
+	1    4550 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R26
+U 1 1 61E53AB9
+P 5950 3400
+AR Path="/61E3B1C4/61E53AB9" Ref="R26"  Part="1" 
+AR Path="/620E267A/61E53AB9" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AB9" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AB9" Ref="R50"  Part="1" 
+AR Path="/624053F2/61E53AB9" Ref="R74"  Part="1" 
+F 0 "R26" H 5950 3229 39  0000 C CNN
+F 1 "1k" H 5950 3304 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 3400 50  0001 C CNN
+F 3 "" H 5950 3400 50  0001 C CNN
+	1    5950 3400
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U4
+U 4 1 61E53ABF
+P 6400 3500
+AR Path="/61E3B1C4/61E53ABF" Ref="U4"  Part="4" 
+AR Path="/620E267A/61E53ABF" Ref="U?"  Part="4" 
+AR Path="/62104863/61E53ABF" Ref="U?"  Part="4" 
+AR Path="/62298682/61E53ABF" Ref="U6"  Part="4" 
+AR Path="/624053F2/61E53ABF" Ref="U8"  Part="4" 
+F 0 "U4" H 6400 3791 39  0000 C CNN
+F 1 "74HC14" H 6400 3716 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 3500 39  0001 C CNN
+F 3 "" H 6400 3500 39  0001 C CNN
+	4    6400 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3500 6100 3500
+Wire Wire Line
+	6100 3500 6100 3400
+Wire Wire Line
+	6100 3500 5500 3500
+Connection ~ 6100 3500
+Wire Wire Line
+	5800 3400 5700 3400
+Wire Wire Line
+	4900 3600 4800 3600
+Wire Wire Line
+	4700 3400 4900 3400
+Wire Wire Line
+	5500 3600 5600 3600
+$Comp
+L bjs-passives:RESISTOR R19
+U 1 1 61E53AD3
+P 4550 4000
+AR Path="/61E3B1C4/61E53AD3" Ref="R19"  Part="1" 
+AR Path="/620E267A/61E53AD3" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AD3" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AD3" Ref="R43"  Part="1" 
+AR Path="/624053F2/61E53AD3" Ref="R67"  Part="1" 
+F 0 "R19" H 4550 4171 39  0000 C CNN
+F 1 "680R" H 4550 4096 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 4000 50  0001 C CNN
+F 3 "" H 4550 4000 50  0001 C CNN
+	1    4550 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R27
+U 1 1 61E53AD9
+P 5950 4000
+AR Path="/61E3B1C4/61E53AD9" Ref="R27"  Part="1" 
+AR Path="/620E267A/61E53AD9" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AD9" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AD9" Ref="R51"  Part="1" 
+AR Path="/624053F2/61E53AD9" Ref="R75"  Part="1" 
+F 0 "R27" H 5950 3829 39  0000 C CNN
+F 1 "1k" H 5950 3904 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 4000 50  0001 C CNN
+F 3 "" H 5950 4000 50  0001 C CNN
+	1    5950 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U5
+U 1 1 61E53ADF
+P 6400 4100
+AR Path="/61E3B1C4/61E53ADF" Ref="U5"  Part="1" 
+AR Path="/620E267A/61E53ADF" Ref="U?"  Part="1" 
+AR Path="/62104863/61E53ADF" Ref="U?"  Part="1" 
+AR Path="/62298682/61E53ADF" Ref="U7"  Part="1" 
+AR Path="/624053F2/61E53ADF" Ref="U9"  Part="1" 
+F 0 "U5" H 6400 4391 39  0000 C CNN
+F 1 "74HC14" H 6400 4316 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 4100 39  0001 C CNN
+F 3 "" H 6400 4100 39  0001 C CNN
+	1    6400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4100 6100 4100
+Wire Wire Line
+	6100 4100 6100 4000
+Wire Wire Line
+	6100 4100 5500 4100
+Connection ~ 6100 4100
+Wire Wire Line
+	5800 4000 5700 4000
+Wire Wire Line
+	4900 4200 4800 4200
+Wire Wire Line
+	4700 4000 4900 4000
+Wire Wire Line
+	5500 4200 5600 4200
+$Comp
+L bjs-passives:RESISTOR R20
+U 1 1 61E53AF3
+P 4550 4600
+AR Path="/61E3B1C4/61E53AF3" Ref="R20"  Part="1" 
+AR Path="/620E267A/61E53AF3" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AF3" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AF3" Ref="R44"  Part="1" 
+AR Path="/624053F2/61E53AF3" Ref="R68"  Part="1" 
+F 0 "R20" H 4550 4771 39  0000 C CNN
+F 1 "680R" H 4550 4696 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 4600 50  0001 C CNN
+F 3 "" H 4550 4600 50  0001 C CNN
+	1    4550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R28
+U 1 1 61E53AF9
+P 5950 4600
+AR Path="/61E3B1C4/61E53AF9" Ref="R28"  Part="1" 
+AR Path="/620E267A/61E53AF9" Ref="R?"  Part="1" 
+AR Path="/62104863/61E53AF9" Ref="R?"  Part="1" 
+AR Path="/62298682/61E53AF9" Ref="R52"  Part="1" 
+AR Path="/624053F2/61E53AF9" Ref="R76"  Part="1" 
+F 0 "R28" H 5950 4429 39  0000 C CNN
+F 1 "1k" H 5950 4504 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U5
+U 2 1 61E53AFF
+P 6400 4700
+AR Path="/61E3B1C4/61E53AFF" Ref="U5"  Part="2" 
+AR Path="/620E267A/61E53AFF" Ref="U?"  Part="2" 
+AR Path="/62104863/61E53AFF" Ref="U?"  Part="2" 
+AR Path="/62298682/61E53AFF" Ref="U7"  Part="2" 
+AR Path="/624053F2/61E53AFF" Ref="U9"  Part="2" 
+F 0 "U5" H 6400 4991 39  0000 C CNN
+F 1 "74HC14" H 6400 4916 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 4700 39  0001 C CNN
+F 3 "" H 6400 4700 39  0001 C CNN
+	2    6400 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 4700 6100 4700
+Wire Wire Line
+	6100 4700 6100 4600
+Wire Wire Line
+	6100 4700 5500 4700
+Connection ~ 6100 4700
+Wire Wire Line
+	5800 4600 5700 4600
+Wire Wire Line
+	4900 4800 4800 4800
+Wire Wire Line
+	4700 4600 4900 4600
+Wire Wire Line
+	5500 4800 5600 4800
+Wire Wire Line
+	5700 4600 5700 4000
+Wire Wire Line
+	5700 4000 5700 3400
+Connection ~ 5700 4000
+Wire Wire Line
+	5700 3400 5700 2800
+Connection ~ 5700 3400
+Wire Wire Line
+	5700 2800 5700 2200
+Connection ~ 5700 2800
+Wire Wire Line
+	5700 1600 5700 2200
+Connection ~ 5700 2200
+Wire Wire Line
+	5600 1800 5600 2400
+Wire Wire Line
+	5600 2400 5600 3000
+Connection ~ 5600 2400
+Wire Wire Line
+	5600 3000 5600 3600
+Connection ~ 5600 3000
+Wire Wire Line
+	5600 3600 5600 4200
+Connection ~ 5600 3600
+Wire Wire Line
+	5600 4200 5600 4800
+Connection ~ 5600 4200
+Wire Wire Line
+	4800 4800 4800 4200
+Wire Wire Line
+	4800 4200 4800 3600
+Connection ~ 4800 4200
+Wire Wire Line
+	4800 3600 4800 3000
+Connection ~ 4800 3600
+Wire Wire Line
+	4800 3000 4800 2400
+Connection ~ 4800 3000
+Wire Wire Line
+	4800 2400 4800 1800
+Connection ~ 4800 2400
+$Comp
+L bjs-passives:RESISTOR R21
+U 1 1 61E7C467
+P 4550 5200
+AR Path="/61E3B1C4/61E7C467" Ref="R21"  Part="1" 
+AR Path="/620E267A/61E7C467" Ref="R?"  Part="1" 
+AR Path="/62104863/61E7C467" Ref="R?"  Part="1" 
+AR Path="/62298682/61E7C467" Ref="R45"  Part="1" 
+AR Path="/624053F2/61E7C467" Ref="R69"  Part="1" 
+F 0 "R21" H 4550 5371 39  0000 C CNN
+F 1 "680R" H 4550 5296 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 5200 50  0001 C CNN
+F 3 "" H 4550 5200 50  0001 C CNN
+	1    4550 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R29
+U 1 1 61E7C46D
+P 5950 5200
+AR Path="/61E3B1C4/61E7C46D" Ref="R29"  Part="1" 
+AR Path="/620E267A/61E7C46D" Ref="R?"  Part="1" 
+AR Path="/62104863/61E7C46D" Ref="R?"  Part="1" 
+AR Path="/62298682/61E7C46D" Ref="R53"  Part="1" 
+AR Path="/624053F2/61E7C46D" Ref="R77"  Part="1" 
+F 0 "R29" H 5950 5029 39  0000 C CNN
+F 1 "1k" H 5950 5104 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 5200 50  0001 C CNN
+F 3 "" H 5950 5200 50  0001 C CNN
+	1    5950 5200
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U5
+U 3 1 61E7C473
+P 6400 5300
+AR Path="/61E3B1C4/61E7C473" Ref="U5"  Part="3" 
+AR Path="/620E267A/61E7C473" Ref="U?"  Part="3" 
+AR Path="/62104863/61E7C473" Ref="U?"  Part="3" 
+AR Path="/62298682/61E7C473" Ref="U7"  Part="3" 
+AR Path="/624053F2/61E7C473" Ref="U9"  Part="3" 
+F 0 "U5" H 6400 5591 39  0000 C CNN
+F 1 "74HC14" H 6400 5516 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 5300 39  0001 C CNN
+F 3 "" H 6400 5300 39  0001 C CNN
+	3    6400 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5300 6100 5300
+Wire Wire Line
+	6100 5300 6100 5200
+Wire Wire Line
+	6100 5300 5500 5300
+Connection ~ 6100 5300
+Wire Wire Line
+	5800 5200 5700 5200
+Wire Wire Line
+	4900 5400 4800 5400
+Wire Wire Line
+	4700 5200 4900 5200
+Wire Wire Line
+	5500 5400 5600 5400
+$Comp
+L bjs-passives:RESISTOR R22
+U 1 1 61E7C487
+P 4550 5800
+AR Path="/61E3B1C4/61E7C487" Ref="R22"  Part="1" 
+AR Path="/620E267A/61E7C487" Ref="R?"  Part="1" 
+AR Path="/62104863/61E7C487" Ref="R?"  Part="1" 
+AR Path="/62298682/61E7C487" Ref="R46"  Part="1" 
+AR Path="/624053F2/61E7C487" Ref="R70"  Part="1" 
+F 0 "R22" H 4550 5971 39  0000 C CNN
+F 1 "680R" H 4550 5896 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 4550 5800 50  0001 C CNN
+F 3 "" H 4550 5800 50  0001 C CNN
+	1    4550 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R30
+U 1 1 61E7C48D
+P 5950 5800
+AR Path="/61E3B1C4/61E7C48D" Ref="R30"  Part="1" 
+AR Path="/620E267A/61E7C48D" Ref="R?"  Part="1" 
+AR Path="/62104863/61E7C48D" Ref="R?"  Part="1" 
+AR Path="/62298682/61E7C48D" Ref="R54"  Part="1" 
+AR Path="/624053F2/61E7C48D" Ref="R78"  Part="1" 
+F 0 "R30" H 5950 5629 39  0000 C CNN
+F 1 "1k" H 5950 5704 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5950 5800 50  0001 C CNN
+F 3 "" H 5950 5800 50  0001 C CNN
+	1    5950 5800
+	-1   0    0    1   
+$EndComp
+$Comp
+L bjs-passives:74HC14 U5
+U 4 1 61E7C493
+P 6400 5900
+AR Path="/61E3B1C4/61E7C493" Ref="U5"  Part="4" 
+AR Path="/620E267A/61E7C493" Ref="U?"  Part="4" 
+AR Path="/62104863/61E7C493" Ref="U?"  Part="4" 
+AR Path="/62298682/61E7C493" Ref="U7"  Part="4" 
+AR Path="/624053F2/61E7C493" Ref="U9"  Part="4" 
+F 0 "U5" H 6400 6191 39  0000 C CNN
+F 1 "74HC14" H 6400 6116 39  0000 C CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6400 5900 39  0001 C CNN
+F 3 "" H 6400 5900 39  0001 C CNN
+	4    6400 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 5900 6100 5900
+Wire Wire Line
+	6100 5900 6100 5800
+Wire Wire Line
+	6100 5900 5500 5900
+Connection ~ 6100 5900
+Wire Wire Line
+	5800 5800 5700 5800
+Wire Wire Line
+	4900 6000 4800 6000
+Wire Wire Line
+	4700 5800 4900 5800
+Wire Wire Line
+	5500 6000 5600 6000
+Wire Wire Line
+	5700 5800 5700 5200
+Wire Wire Line
+	5600 5400 5600 6000
+Wire Wire Line
+	4800 6000 4800 5400
+Wire Wire Line
+	5700 5200 5700 4600
+Connection ~ 5700 5200
+Connection ~ 5700 4600
+Wire Wire Line
+	5600 5400 5600 4800
+Connection ~ 5600 5400
+Connection ~ 5600 4800
+Wire Wire Line
+	4800 5400 4800 4800
+Connection ~ 4800 5400
+Connection ~ 4800 4800
+$Comp
+L bjs-passives:74HC14 U4
+U 7 1 61E99D1A
+P 6300 1000
+AR Path="/61E3B1C4/61E99D1A" Ref="U4"  Part="7" 
+AR Path="/620E267A/61E99D1A" Ref="U?"  Part="7" 
+AR Path="/62104863/61E99D1A" Ref="U?"  Part="7" 
+AR Path="/62298682/61E99D1A" Ref="U6"  Part="7" 
+AR Path="/624053F2/61E99D1A" Ref="U8"  Part="7" 
+F 0 "U4" H 6385 1048 39  0000 L CNN
+F 1 "74HC14" H 6385 973 39  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6300 1000 39  0001 C CNN
+F 3 "" H 6300 1000 39  0001 C CNN
+	7    6300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:74HC14 U5
+U 7 1 61E9AF4A
+P 7050 1000
+AR Path="/61E3B1C4/61E9AF4A" Ref="U5"  Part="7" 
+AR Path="/620E267A/61E9AF4A" Ref="U?"  Part="7" 
+AR Path="/62104863/61E9AF4A" Ref="U?"  Part="7" 
+AR Path="/62298682/61E9AF4A" Ref="U7"  Part="7" 
+AR Path="/624053F2/61E9AF4A" Ref="U9"  Part="7" 
+F 0 "U5" H 7135 1048 39  0000 L CNN
+F 1 "74HC14" H 7135 973 39  0000 L CNN
+F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7050 1000 39  0001 C CNN
+F 3 "" H 7050 1000 39  0001 C CNN
+	7    7050 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:CAPACITOR C14
+U 1 1 61E9C998
+P 6000 1000
+AR Path="/61E3B1C4/61E9C998" Ref="C14"  Part="1" 
+AR Path="/620E267A/61E9C998" Ref="C?"  Part="1" 
+AR Path="/62104863/61E9C998" Ref="C?"  Part="1" 
+AR Path="/62298682/61E9C998" Ref="C16"  Part="1" 
+AR Path="/624053F2/61E9C998" Ref="C18"  Part="1" 
+F 0 "C14" V 5962 1078 39  0000 L CNN
+F 1 "100n" V 6037 1078 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6000 1000 50  0001 C CNN
+F 3 "" H 6000 1000 50  0001 C CNN
+	1    6000 1000
+	0    1    1    0   
+$EndComp
+$Comp
+L bjs-passives:CAPACITOR C15
+U 1 1 61E9D9E3
+P 6750 1000
+AR Path="/61E3B1C4/61E9D9E3" Ref="C15"  Part="1" 
+AR Path="/620E267A/61E9D9E3" Ref="C?"  Part="1" 
+AR Path="/62104863/61E9D9E3" Ref="C?"  Part="1" 
+AR Path="/62298682/61E9D9E3" Ref="C17"  Part="1" 
+AR Path="/624053F2/61E9D9E3" Ref="C19"  Part="1" 
+F 0 "C15" V 6712 1078 39  0000 L CNN
+F 1 "100n" V 6787 1078 39  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 6750 1000 50  0001 C CNN
+F 3 "" H 6750 1000 50  0001 C CNN
+	1    6750 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 900  6000 750 
+Wire Wire Line
+	6000 750  6300 750 
+Wire Wire Line
+	7050 750  7050 850 
+Wire Wire Line
+	6300 850  6300 750 
+Connection ~ 6300 750 
+Wire Wire Line
+	6000 1100 6000 1250
+Wire Wire Line
+	6000 1250 6300 1250
+Wire Wire Line
+	6300 1250 6300 1150
+Wire Wire Line
+	7050 1250 7050 1150
+Connection ~ 6300 1250
+Wire Wire Line
+	5700 1600 5700 750 
+Wire Wire Line
+	5700 750  6000 750 
+Connection ~ 5700 1600
+Connection ~ 6000 750 
+Wire Wire Line
+	5600 1800 5600 1250
+Wire Wire Line
+	5600 1250 6000 1250
+Connection ~ 5600 1800
+Connection ~ 6000 1250
+Text HLabel 7500 750  2    39   Input ~ 0
+ISO_VCC
+Text HLabel 7500 1250 2    39   Input ~ 0
+ISO_GND
+Wire Wire Line
+	7500 1250 7400 1250
+Connection ~ 7050 1250
+Wire Wire Line
+	7500 750  7050 750 
+Connection ~ 7050 750 
+Wire Wire Line
+	6600 1700 6700 1700
+Text HLabel 7500 1700 2    39   Input ~ 0
+ISO_OUT1
+Wire Wire Line
+	6600 2300 6700 2300
+Wire Wire Line
+	6600 2900 6700 2900
+Wire Wire Line
+	6600 3500 6700 3500
+Wire Wire Line
+	6600 4100 6700 4100
+Wire Wire Line
+	6600 4700 6700 4700
+Wire Wire Line
+	6600 5300 6700 5300
+Wire Wire Line
+	6600 5900 6700 5900
+Text HLabel 7500 2300 2    39   Input ~ 0
+ISO_OUT2
+Text HLabel 7500 2900 2    39   Input ~ 0
+ISO_OUT3
+Text HLabel 7500 3500 2    39   Input ~ 0
+ISO_OUT4
+Text HLabel 7500 4100 2    39   Input ~ 0
+ISO_OUT5
+Text HLabel 7500 4700 2    39   Input ~ 0
+ISO_OUT6
+Text HLabel 7500 5300 2    39   Input ~ 0
+ISO_OUT7
+Text HLabel 7500 5900 2    39   Input ~ 0
+ISO_OUT8
+Wire Wire Line
+	4400 1600 3500 1600
+Text HLabel 3500 1600 0    39   Input ~ 0
+IN1
+Wire Wire Line
+	4400 2200 3500 2200
+Wire Wire Line
+	4400 2800 3500 2800
+Wire Wire Line
+	4400 3400 3500 3400
+Wire Wire Line
+	4400 4000 3500 4000
+Wire Wire Line
+	4400 4600 3500 4600
+Wire Wire Line
+	4400 5200 3500 5200
+Wire Wire Line
+	4400 5800 3500 5800
+Text HLabel 3500 2200 0    39   Input ~ 0
+IN2
+Text HLabel 3500 2800 0    39   Input ~ 0
+IN3
+Text HLabel 3500 3400 0    39   Input ~ 0
+IN4
+Text HLabel 3500 4000 0    39   Input ~ 0
+IN5
+Text HLabel 3500 4600 0    39   Input ~ 0
+IN6
+Text HLabel 3500 5200 0    39   Input ~ 0
+IN7
+Text HLabel 3500 5800 0    39   Input ~ 0
+IN8
+Text HLabel 3500 6000 0    39   Input ~ 0
+IN_GND
+Wire Wire Line
+	3500 6000 4800 6000
+Connection ~ 4800 6000
+$Comp
+L bjs-optocouplers:VOM617A-4T O1
+U 1 1 624CD01A
+P 5100 1700
+AR Path="/61E3B1C4/624CD01A" Ref="O1"  Part="1" 
+AR Path="/62298682/624CD01A" Ref="O9"  Part="1" 
+AR Path="/624053F2/624CD01A" Ref="O17"  Part="1" 
+F 0 "O1" H 5200 1998 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 1923 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 1700 50  0001 C CNN
+F 3 "" H 5100 1700 50  0001 C CNN
+	1    5100 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O2
+U 1 1 624CDAE2
+P 5100 2300
+AR Path="/61E3B1C4/624CDAE2" Ref="O2"  Part="1" 
+AR Path="/62298682/624CDAE2" Ref="O10"  Part="1" 
+AR Path="/624053F2/624CDAE2" Ref="O18"  Part="1" 
+F 0 "O2" H 5200 2598 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 2523 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 2300 50  0001 C CNN
+F 3 "" H 5100 2300 50  0001 C CNN
+	1    5100 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O3
+U 1 1 624CE149
+P 5100 2900
+AR Path="/61E3B1C4/624CE149" Ref="O3"  Part="1" 
+AR Path="/62298682/624CE149" Ref="O11"  Part="1" 
+AR Path="/624053F2/624CE149" Ref="O19"  Part="1" 
+F 0 "O3" H 5200 3198 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 3123 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 2900 50  0001 C CNN
+F 3 "" H 5100 2900 50  0001 C CNN
+	1    5100 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O4
+U 1 1 624CE907
+P 5100 3500
+AR Path="/61E3B1C4/624CE907" Ref="O4"  Part="1" 
+AR Path="/62298682/624CE907" Ref="O12"  Part="1" 
+AR Path="/624053F2/624CE907" Ref="O20"  Part="1" 
+F 0 "O4" H 5200 3798 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 3723 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 3500 50  0001 C CNN
+F 3 "" H 5100 3500 50  0001 C CNN
+	1    5100 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O5
+U 1 1 624CEE6D
+P 5100 4100
+AR Path="/61E3B1C4/624CEE6D" Ref="O5"  Part="1" 
+AR Path="/62298682/624CEE6D" Ref="O13"  Part="1" 
+AR Path="/624053F2/624CEE6D" Ref="O21"  Part="1" 
+F 0 "O5" H 5200 4398 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 4323 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 4100 50  0001 C CNN
+F 3 "" H 5100 4100 50  0001 C CNN
+	1    5100 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O6
+U 1 1 624CF2D4
+P 5100 4700
+AR Path="/61E3B1C4/624CF2D4" Ref="O6"  Part="1" 
+AR Path="/62298682/624CF2D4" Ref="O14"  Part="1" 
+AR Path="/624053F2/624CF2D4" Ref="O22"  Part="1" 
+F 0 "O6" H 5200 4998 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 4923 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 4700 50  0001 C CNN
+F 3 "" H 5100 4700 50  0001 C CNN
+	1    5100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O7
+U 1 1 624CF7AE
+P 5100 5300
+AR Path="/61E3B1C4/624CF7AE" Ref="O7"  Part="1" 
+AR Path="/62298682/624CF7AE" Ref="O15"  Part="1" 
+AR Path="/624053F2/624CF7AE" Ref="O23"  Part="1" 
+F 0 "O7" H 5200 5598 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 5523 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 5300 50  0001 C CNN
+F 3 "" H 5100 5300 50  0001 C CNN
+	1    5100 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-optocouplers:VOM617A-4T O8
+U 1 1 624CFEEE
+P 5100 5900
+AR Path="/61E3B1C4/624CFEEE" Ref="O8"  Part="1" 
+AR Path="/62298682/624CFEEE" Ref="O16"  Part="1" 
+AR Path="/624053F2/624CFEEE" Ref="O24"  Part="1" 
+F 0 "O8" H 5200 6198 39  0000 C CNN
+F 1 "VOM617A-4T" H 5200 6123 39  0000 C CNN
+F 2 "smd:VOMOPTO" H 5100 5900 50  0001 C CNN
+F 3 "" H 5100 5900 50  0001 C CNN
+	1    5100 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD3
+U 1 1 62CE4D89
+P 6850 1550
+AR Path="/61E3B1C4/62CE4D89" Ref="LD3"  Part="1" 
+AR Path="/62298682/62CE4D89" Ref="LD11"  Part="1" 
+AR Path="/624053F2/62CE4D89" Ref="LD19"  Part="1" 
+F 0 "LD3" H 6825 1741 39  0000 C CNN
+F 1 "LED" H 6825 1666 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 1550 50  0001 C CNN
+F 3 "" H 6850 1550 50  0001 C CNN
+	1    6850 1550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R31
+U 1 1 62CE5C8E
+P 7200 1550
+AR Path="/61E3B1C4/62CE5C8E" Ref="R31"  Part="1" 
+AR Path="/62298682/62CE5C8E" Ref="R55"  Part="1" 
+AR Path="/624053F2/62CE5C8E" Ref="R79"  Part="1" 
+F 0 "R31" H 7200 1721 39  0000 C CNN
+F 1 "RESISTOR" H 7200 1646 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 1550 50  0001 C CNN
+F 3 "" H 7200 1550 50  0001 C CNN
+	1    7200 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 1550 7400 1550
+Wire Wire Line
+	7400 1550 7400 1250
+Connection ~ 7400 1250
+Wire Wire Line
+	7400 1250 7050 1250
+Wire Wire Line
+	7050 1550 7000 1550
+Wire Wire Line
+	6750 1550 6700 1550
+Wire Wire Line
+	6700 1550 6700 1700
+Connection ~ 6700 1700
+Wire Wire Line
+	6700 1700 7500 1700
+$Comp
+L bjs-discrete:LED LD4
+U 1 1 62CF3A1A
+P 6850 2150
+AR Path="/61E3B1C4/62CF3A1A" Ref="LD4"  Part="1" 
+AR Path="/62298682/62CF3A1A" Ref="LD12"  Part="1" 
+AR Path="/624053F2/62CF3A1A" Ref="LD20"  Part="1" 
+F 0 "LD4" H 6825 2341 39  0000 C CNN
+F 1 "LED" H 6825 2266 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD5
+U 1 1 62CF43AC
+P 6850 2750
+AR Path="/61E3B1C4/62CF43AC" Ref="LD5"  Part="1" 
+AR Path="/62298682/62CF43AC" Ref="LD13"  Part="1" 
+AR Path="/624053F2/62CF43AC" Ref="LD21"  Part="1" 
+F 0 "LD5" H 6825 2941 39  0000 C CNN
+F 1 "LED" H 6825 2866 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 2750 50  0001 C CNN
+F 3 "" H 6850 2750 50  0001 C CNN
+	1    6850 2750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD6
+U 1 1 62CF487F
+P 6850 3350
+AR Path="/61E3B1C4/62CF487F" Ref="LD6"  Part="1" 
+AR Path="/62298682/62CF487F" Ref="LD14"  Part="1" 
+AR Path="/624053F2/62CF487F" Ref="LD22"  Part="1" 
+F 0 "LD6" H 6825 3541 39  0000 C CNN
+F 1 "LED" H 6825 3466 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 3350 50  0001 C CNN
+F 3 "" H 6850 3350 50  0001 C CNN
+	1    6850 3350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD7
+U 1 1 62CF4FBD
+P 6850 3950
+AR Path="/61E3B1C4/62CF4FBD" Ref="LD7"  Part="1" 
+AR Path="/62298682/62CF4FBD" Ref="LD15"  Part="1" 
+AR Path="/624053F2/62CF4FBD" Ref="LD23"  Part="1" 
+F 0 "LD7" H 6825 4141 39  0000 C CNN
+F 1 "LED" H 6825 4066 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 3950 50  0001 C CNN
+F 3 "" H 6850 3950 50  0001 C CNN
+	1    6850 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD8
+U 1 1 62CF532E
+P 6850 4550
+AR Path="/61E3B1C4/62CF532E" Ref="LD8"  Part="1" 
+AR Path="/62298682/62CF532E" Ref="LD16"  Part="1" 
+AR Path="/624053F2/62CF532E" Ref="LD24"  Part="1" 
+F 0 "LD8" H 6825 4741 39  0000 C CNN
+F 1 "LED" H 6825 4666 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 4550 50  0001 C CNN
+F 3 "" H 6850 4550 50  0001 C CNN
+	1    6850 4550
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD9
+U 1 1 62CF580C
+P 6850 5150
+AR Path="/61E3B1C4/62CF580C" Ref="LD9"  Part="1" 
+AR Path="/62298682/62CF580C" Ref="LD17"  Part="1" 
+AR Path="/624053F2/62CF580C" Ref="LD25"  Part="1" 
+F 0 "LD9" H 6825 5341 39  0000 C CNN
+F 1 "LED" H 6825 5266 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 5150 50  0001 C CNN
+F 3 "" H 6850 5150 50  0001 C CNN
+	1    6850 5150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-discrete:LED LD10
+U 1 1 62CF5E6F
+P 6850 5750
+AR Path="/61E3B1C4/62CF5E6F" Ref="LD10"  Part="1" 
+AR Path="/62298682/62CF5E6F" Ref="LD18"  Part="1" 
+AR Path="/624053F2/62CF5E6F" Ref="LD26"  Part="1" 
+F 0 "LD10" H 6825 5941 39  0000 C CNN
+F 1 "LED" H 6825 5866 39  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 6850 5750 50  0001 C CNN
+F 3 "" H 6850 5750 50  0001 C CNN
+	1    6850 5750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R32
+U 1 1 62CF69DB
+P 7200 2150
+AR Path="/61E3B1C4/62CF69DB" Ref="R32"  Part="1" 
+AR Path="/62298682/62CF69DB" Ref="R56"  Part="1" 
+AR Path="/624053F2/62CF69DB" Ref="R80"  Part="1" 
+F 0 "R32" H 7200 2321 39  0000 C CNN
+F 1 "RESISTOR" H 7200 2246 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 2150 50  0001 C CNN
+F 3 "" H 7200 2150 50  0001 C CNN
+	1    7200 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R33
+U 1 1 62CF6D12
+P 7200 2750
+AR Path="/61E3B1C4/62CF6D12" Ref="R33"  Part="1" 
+AR Path="/62298682/62CF6D12" Ref="R57"  Part="1" 
+AR Path="/624053F2/62CF6D12" Ref="R81"  Part="1" 
+F 0 "R33" H 7200 2921 39  0000 C CNN
+F 1 "RESISTOR" H 7200 2846 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 2750 50  0001 C CNN
+F 3 "" H 7200 2750 50  0001 C CNN
+	1    7200 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R34
+U 1 1 62CF7105
+P 7200 3350
+AR Path="/61E3B1C4/62CF7105" Ref="R34"  Part="1" 
+AR Path="/62298682/62CF7105" Ref="R58"  Part="1" 
+AR Path="/624053F2/62CF7105" Ref="R82"  Part="1" 
+F 0 "R34" H 7200 3521 39  0000 C CNN
+F 1 "RESISTOR" H 7200 3446 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 3350 50  0001 C CNN
+F 3 "" H 7200 3350 50  0001 C CNN
+	1    7200 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R35
+U 1 1 62CF7405
+P 7200 3950
+AR Path="/61E3B1C4/62CF7405" Ref="R35"  Part="1" 
+AR Path="/62298682/62CF7405" Ref="R59"  Part="1" 
+AR Path="/624053F2/62CF7405" Ref="R83"  Part="1" 
+F 0 "R35" H 7200 4121 39  0000 C CNN
+F 1 "RESISTOR" H 7200 4046 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 3950 50  0001 C CNN
+F 3 "" H 7200 3950 50  0001 C CNN
+	1    7200 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R36
+U 1 1 62CF78FA
+P 7200 4550
+AR Path="/61E3B1C4/62CF78FA" Ref="R36"  Part="1" 
+AR Path="/62298682/62CF78FA" Ref="R60"  Part="1" 
+AR Path="/624053F2/62CF78FA" Ref="R84"  Part="1" 
+F 0 "R36" H 7200 4721 39  0000 C CNN
+F 1 "RESISTOR" H 7200 4646 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 4550 50  0001 C CNN
+F 3 "" H 7200 4550 50  0001 C CNN
+	1    7200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R37
+U 1 1 62CF7B55
+P 7200 5150
+AR Path="/61E3B1C4/62CF7B55" Ref="R37"  Part="1" 
+AR Path="/62298682/62CF7B55" Ref="R61"  Part="1" 
+AR Path="/624053F2/62CF7B55" Ref="R85"  Part="1" 
+F 0 "R37" H 7200 5321 39  0000 C CNN
+F 1 "RESISTOR" H 7200 5246 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 5150 50  0001 C CNN
+F 3 "" H 7200 5150 50  0001 C CNN
+	1    7200 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L bjs-passives:RESISTOR R38
+U 1 1 62CF7DA7
+P 7200 5750
+AR Path="/61E3B1C4/62CF7DA7" Ref="R38"  Part="1" 
+AR Path="/62298682/62CF7DA7" Ref="R62"  Part="1" 
+AR Path="/624053F2/62CF7DA7" Ref="R86"  Part="1" 
+F 0 "R38" H 7200 5921 39  0000 C CNN
+F 1 "RESISTOR" H 7200 5846 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7200 5750 50  0001 C CNN
+F 3 "" H 7200 5750 50  0001 C CNN
+	1    7200 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5750 6700 5750
+Wire Wire Line
+	6700 5750 6700 5900
+Connection ~ 6700 5900
+Wire Wire Line
+	6700 5900 7500 5900
+Wire Wire Line
+	6750 5150 6700 5150
+Wire Wire Line
+	6700 5150 6700 5300
+Connection ~ 6700 5300
+Wire Wire Line
+	6700 5300 7500 5300
+Wire Wire Line
+	6750 4550 6700 4550
+Wire Wire Line
+	6700 4550 6700 4700
+Connection ~ 6700 4700
+Wire Wire Line
+	6700 4700 7500 4700
+Wire Wire Line
+	6750 3950 6700 3950
+Wire Wire Line
+	6700 3950 6700 4100
+Connection ~ 6700 4100
+Wire Wire Line
+	6700 4100 7500 4100
+Wire Wire Line
+	6750 3350 6700 3350
+Wire Wire Line
+	6700 3350 6700 3500
+Connection ~ 6700 3500
+Wire Wire Line
+	6700 3500 7500 3500
+Wire Wire Line
+	6750 2750 6700 2750
+Wire Wire Line
+	6700 2750 6700 2900
+Connection ~ 6700 2900
+Wire Wire Line
+	6700 2900 7500 2900
+Wire Wire Line
+	6750 2150 6700 2150
+Wire Wire Line
+	6700 2150 6700 2300
+Connection ~ 6700 2300
+Wire Wire Line
+	6700 2300 7500 2300
+Wire Wire Line
+	7000 2150 7050 2150
+Wire Wire Line
+	7000 2750 7050 2750
+Wire Wire Line
+	7000 3350 7050 3350
+Wire Wire Line
+	7000 3950 7050 3950
+Wire Wire Line
+	7000 4550 7050 4550
+Wire Wire Line
+	7050 5150 7000 5150
+Wire Wire Line
+	7000 5750 7050 5750
+Wire Wire Line
+	7350 5750 7400 5750
+Wire Wire Line
+	7400 5750 7400 5150
+Connection ~ 7400 1550
+Wire Wire Line
+	7350 2150 7400 2150
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 7400 1550
+Wire Wire Line
+	7350 2750 7400 2750
+Connection ~ 7400 2750
+Wire Wire Line
+	7400 2750 7400 2150
+Wire Wire Line
+	7350 3350 7400 3350
+Connection ~ 7400 3350
+Wire Wire Line
+	7400 3350 7400 2750
+Wire Wire Line
+	7350 3950 7400 3950
+Connection ~ 7400 3950
+Wire Wire Line
+	7400 3950 7400 3350
+Wire Wire Line
+	7350 4550 7400 4550
+Connection ~ 7400 4550
+Wire Wire Line
+	7400 4550 7400 3950
+Wire Wire Line
+	7350 5150 7400 5150
+Connection ~ 7400 5150
+Wire Wire Line
+	7400 5150 7400 4550
+Wire Wire Line
+	6300 750  6750 750 
+Wire Wire Line
+	6300 1250 6750 1250
+Wire Wire Line
+	6750 900  6750 750 
+Connection ~ 6750 750 
+Wire Wire Line
+	6750 750  7050 750 
+Wire Wire Line
+	6750 1100 6750 1250
+Connection ~ 6750 1250
+Wire Wire Line
+	6750 1250 7050 1250
+$EndSCHEMATC

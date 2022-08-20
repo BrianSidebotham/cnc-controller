@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 4 5
 Title ""
 Date ""
 Rev ""
@@ -70,22 +70,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 2150 2650 2150
 $Comp
-L power:GND #PWR?
-U 1 1 5FE50C13
-P 4300 2550
-AR Path="/5FE3CAD9/5FE50C13" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/5FE50C13" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/5FE50C13" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/5FE50C13" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/5FE50C13" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4300 2300 50  0001 C CNN
-F 1 "GND" H 4305 2377 50  0000 C CNN
-F 2 "" H 4300 2550 50  0001 C CNN
-F 3 "" H 4300 2550 50  0001 C CNN
-	1    4300 2550
-	1    0    0    -1  
-$EndComp
-$Comp
 L bjs-discrete:BAS70 D?
 U 1 1 5FE55CB1
 P 1600 2150
@@ -130,34 +114,18 @@ Connection ~ 1600 2350
 $Comp
 L bjs-passives:CAPACITOR C?
 U 1 1 5FEC77C0
-P 9900 1150
+P 9550 1050
 AR Path="/5FE3CAD9/5FEC77C0" Ref="C?"  Part="1" 
 AR Path="/60514F63/5FEC77C0" Ref="C?"  Part="1" 
 AR Path="/605151E7/5FEC77C0" Ref="C?"  Part="1" 
 AR Path="/60515B5F/5FEC77C0" Ref="C?"  Part="1" 
 AR Path="/605160F4/5FEC77C0" Ref="C?"  Part="1" 
-F 0 "C?" V 9862 1228 39  0000 L CNN
-F 1 "1u" V 9937 1228 39  0000 L CNN
-F 2 "" H 9900 1150 50  0001 C CNN
-F 3 "" H 9900 1150 50  0001 C CNN
-	1    9900 1150
+F 0 "C?" V 9512 1128 39  0000 L CNN
+F 1 "1u" V 9587 1128 39  0000 L CNN
+F 2 "" H 9550 1050 50  0001 C CNN
+F 3 "" H 9550 1050 50  0001 C CNN
+	1    9550 1050
 	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FEC2B6F
-P 2850 1450
-AR Path="/5FE3CAD9/5FEC2B6F" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/5FEC2B6F" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/5FEC2B6F" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/5FEC2B6F" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/5FEC2B6F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 1300 50  0001 C CNN
-F 1 "VCC" H 2865 1623 50  0000 C CNN
-F 2 "" H 2850 1450 50  0001 C CNN
-F 3 "" H 2850 1450 50  0001 C CNN
-	1    2850 1450
-	1    0    0    -1  
 $EndComp
 $Comp
 L bjs-passives:CAPACITOR C?
@@ -209,8 +177,6 @@ F 3 "" H 4150 2050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 2150 2650 2500
-Wire Wire Line
-	4300 2550 4300 2500
 $Comp
 L bjs-passives:74HC14 U?
 U 1 1 5FF23FE9
@@ -246,49 +212,17 @@ $EndComp
 $Comp
 L bjs-passives:74HC14 U?
 U 7 1 5FF3C91F
-P 10600 1150
+P 10250 1050
 AR Path="/5FE3CAD9/5FF3C91F" Ref="U?"  Part="7" 
 AR Path="/60514F63/5FF3C91F" Ref="U?"  Part="7" 
 AR Path="/605151E7/5FF3C91F" Ref="U?"  Part="7" 
 AR Path="/60515B5F/5FF3C91F" Ref="U?"  Part="7" 
 AR Path="/605160F4/5FF3C91F" Ref="U?"  Part="7" 
-F 0 "U?" H 10685 1198 39  0000 L CNN
-F 1 "74HC14" H 10685 1123 39  0000 L CNN
-F 2 "" H 10600 1150 39  0001 C CNN
-F 3 "" H 10600 1150 39  0001 C CNN
-	7    10600 1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5FF62042
-P 10500 750
-AR Path="/5FE3CAD9/5FF62042" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/5FF62042" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/5FF62042" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/5FF62042" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/5FF62042" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10500 600 50  0001 C CNN
-F 1 "VCC" H 10515 923 50  0000 C CNN
-F 2 "" H 10500 750 50  0001 C CNN
-F 3 "" H 10500 750 50  0001 C CNN
-	1    10500 750 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5FF62C83
-P 10500 1550
-AR Path="/5FE3CAD9/5FF62C83" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/5FF62C83" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/5FF62C83" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/5FF62C83" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/5FF62C83" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10500 1300 50  0001 C CNN
-F 1 "GND" H 10505 1377 50  0000 C CNN
-F 2 "" H 10500 1550 50  0001 C CNN
-F 3 "" H 10500 1550 50  0001 C CNN
-	1    10500 1550
+F 0 "U?" H 10335 1098 39  0000 L CNN
+F 1 "74HC14" H 10335 1023 39  0000 L CNN
+F 2 "" H 10250 1050 39  0001 C CNN
+F 3 "" H 10250 1050 39  0001 C CNN
+	7    10250 1050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -447,65 +381,25 @@ Connection ~ 3400 2050
 Wire Wire Line
 	3400 2050 3500 2050
 Wire Wire Line
-	10600 1450 10500 1450
+	10250 1200 10250 1350
 Wire Wire Line
-	10600 1300 10600 1450
-Wire Wire Line
-	10250 1300 10250 1450
-Wire Wire Line
-	10500 1550 10500 1450
-Connection ~ 10500 1450
-Wire Wire Line
-	10500 1450 10250 1450
-Wire Wire Line
-	10600 850  10500 850 
-Wire Wire Line
-	10250 850  10250 1000
-Wire Wire Line
-	10600 850  10600 1000
-Wire Wire Line
-	10500 750  10500 850 
-Connection ~ 10500 850 
-Wire Wire Line
-	10500 850  10250 850 
+	10250 750  10250 900 
 $Comp
 L bjs-passives:CAPACITOR C?
 U 1 1 6002D3ED
-P 8950 1150
+P 8600 1050
 AR Path="/5FE3CAD9/6002D3ED" Ref="C?"  Part="1" 
 AR Path="/60514F63/6002D3ED" Ref="C?"  Part="1" 
 AR Path="/605151E7/6002D3ED" Ref="C?"  Part="1" 
 AR Path="/60515B5F/6002D3ED" Ref="C?"  Part="1" 
 AR Path="/605160F4/6002D3ED" Ref="C?"  Part="1" 
-F 0 "C?" V 8912 1228 39  0000 L CNN
-F 1 "100n" V 8987 1228 39  0000 L CNN
-F 2 "" H 8950 1150 50  0001 C CNN
-F 3 "" H 8950 1150 50  0001 C CNN
-	1    8950 1150
+F 0 "C?" V 8562 1128 39  0000 L CNN
+F 1 "100n" V 8637 1128 39  0000 L CNN
+F 2 "" H 8600 1050 50  0001 C CNN
+F 3 "" H 8600 1050 50  0001 C CNN
+	1    8600 1050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8950 1000 8950 850 
-Wire Wire Line
-	8950 1450 8950 1300
-$Comp
-L power:+VDC #PWR?
-U 1 1 6003E870
-P 9150 800
-AR Path="/5FE3CAD9/6003E870" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/6003E870" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/6003E870" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/6003E870" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/6003E870" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9150 700 50  0001 C CNN
-F 1 "+VDC" H 9150 1075 50  0000 C CNN
-F 2 "" H 9150 800 50  0001 C CNN
-F 3 "" H 9150 800 50  0001 C CNN
-	1    9150 800 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9150 800  9150 850 
 $Comp
 L bjs-passives:RESISTOR R?
 U 1 1 60474D7C
@@ -525,86 +419,73 @@ $EndComp
 $Comp
 L bjs-passives:CAPACITOR C?
 U 1 1 604788A4
-P 8600 1150
+P 8250 1050
 AR Path="/5FE3CAD9/604788A4" Ref="C?"  Part="1" 
 AR Path="/60514F63/604788A4" Ref="C?"  Part="1" 
 AR Path="/605151E7/604788A4" Ref="C?"  Part="1" 
 AR Path="/60515B5F/604788A4" Ref="C?"  Part="1" 
 AR Path="/605160F4/604788A4" Ref="C?"  Part="1" 
-F 0 "C?" V 8562 1228 39  0000 L CNN
-F 1 "1u" V 8637 1228 39  0000 L CNN
-F 2 "" H 8600 1150 50  0001 C CNN
-F 3 "" H 8600 1150 50  0001 C CNN
-	1    8600 1150
+F 0 "C?" V 8212 1128 39  0000 L CNN
+F 1 "1u" V 8287 1128 39  0000 L CNN
+F 2 "" H 8250 1050 50  0001 C CNN
+F 3 "" H 8250 1050 50  0001 C CNN
+	1    8250 1050
 	0    1    1    0   
 $EndComp
-Connection ~ 9150 850 
+Connection ~ 8900 1350
 Wire Wire Line
-	8950 850  9150 850 
+	8900 1350 8600 1350
 Wire Wire Line
-	9150 850  9250 850 
-Connection ~ 9250 1450
+	8900 850  8900 750 
 Wire Wire Line
-	9250 1450 8950 1450
-Wire Wire Line
-	9250 950  9250 850 
-Wire Wire Line
-	9250 1450 9250 1350
+	8900 1350 8900 1250
 $Comp
 L bjs-discrete:ULN2803 U?
 U 9 1 60015AE9
-P 9250 1150
+P 8900 1050
 AR Path="/5FE3CAD9/60015AE9" Ref="U?"  Part="9" 
 AR Path="/60514F63/60015AE9" Ref="U?"  Part="9" 
 AR Path="/605151E7/60015AE9" Ref="U?"  Part="9" 
 AR Path="/60515B5F/60015AE9" Ref="U?"  Part="9" 
 AR Path="/605160F4/60015AE9" Ref="U?"  Part="9" 
-F 0 "U?" H 9335 1188 39  0000 L CNN
-F 1 "ULN2803" H 9335 1113 39  0000 L CNN
-F 2 "" H 9250 1150 50  0001 C CNN
-F 3 "" H 9250 1150 50  0001 C CNN
-	9    9250 1150
+F 0 "U?" H 8985 1088 39  0000 L CNN
+F 1 "ULN2803" H 8985 1013 39  0000 L CNN
+F 2 "" H 8900 1050 50  0001 C CNN
+F 3 "" H 8900 1050 50  0001 C CNN
+	9    8900 1050
 	1    0    0    -1  
 $EndComp
 $Comp
 L bjs-passives:CAPACITOR C?
 U 1 1 60489F19
-P 10250 1150
+P 9900 1050
 AR Path="/5FE3CAD9/60489F19" Ref="C?"  Part="1" 
 AR Path="/60514F63/60489F19" Ref="C?"  Part="1" 
 AR Path="/605151E7/60489F19" Ref="C?"  Part="1" 
 AR Path="/60515B5F/60489F19" Ref="C?"  Part="1" 
 AR Path="/605160F4/60489F19" Ref="C?"  Part="1" 
-F 0 "C?" V 10212 1228 39  0000 L CNN
-F 1 "100n" V 10287 1228 39  0000 L CNN
-F 2 "" H 10250 1150 50  0001 C CNN
-F 3 "" H 10250 1150 50  0001 C CNN
-	1    10250 1150
+F 0 "C?" V 9862 1128 39  0000 L CNN
+F 1 "100n" V 9937 1128 39  0000 L CNN
+F 2 "" H 9900 1050 50  0001 C CNN
+F 3 "" H 9900 1050 50  0001 C CNN
+	1    9900 1050
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9900 1000 9900 850 
+	9550 750  9900 750 
+Connection ~ 9900 750 
 Wire Wire Line
-	9900 850  10250 850 
-Connection ~ 10250 850 
+	9900 1350 9550 1350
+Connection ~ 9900 1350
 Wire Wire Line
-	10250 1450 9900 1450
+	8900 1350 9550 1350
+Connection ~ 9550 1350
 Wire Wire Line
-	9900 1450 9900 1300
-Connection ~ 10250 1450
+	8250 1350 8600 1350
+Connection ~ 8600 1350
 Wire Wire Line
-	9250 1450 9900 1450
-Connection ~ 9900 1450
-Wire Wire Line
-	8600 1300 8600 1450
-Wire Wire Line
-	8600 1450 8950 1450
-Connection ~ 8950 1450
-Wire Wire Line
-	8600 1000 8600 850 
-Wire Wire Line
-	8600 850  8950 850 
-Connection ~ 8950 850 
+	8250 750  8600 750 
+Connection ~ 8600 750 
 Wire Wire Line
 	4350 1550 6050 1550
 Wire Wire Line
@@ -676,22 +557,6 @@ Wire Wire Line
 Wire Wire Line
 	2600 4250 2650 4250
 $Comp
-L power:GND #PWR?
-U 1 1 604F0F45
-P 4300 4650
-AR Path="/5FE3CAD9/604F0F45" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/604F0F45" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/604F0F45" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/604F0F45" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/604F0F45" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 4300 4400 50  0001 C CNN
-F 1 "GND" H 4305 4477 50  0000 C CNN
-F 2 "" H 4300 4650 50  0001 C CNN
-F 3 "" H 4300 4650 50  0001 C CNN
-	1    4300 4650
-	1    0    0    -1  
-$EndComp
-$Comp
 L bjs-discrete:BAS70 D?
 U 1 1 604F0F4B
 P 1600 4250
@@ -733,22 +598,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 4450 1600 4450
 Connection ~ 1600 4450
-$Comp
-L power:VCC #PWR?
-U 1 1 604F0F5F
-P 2850 3550
-AR Path="/5FE3CAD9/604F0F5F" Ref="#PWR?"  Part="1" 
-AR Path="/60514F63/604F0F5F" Ref="#PWR?"  Part="1" 
-AR Path="/605151E7/604F0F5F" Ref="#PWR?"  Part="1" 
-AR Path="/60515B5F/604F0F5F" Ref="#PWR?"  Part="1" 
-AR Path="/605160F4/604F0F5F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2850 3400 50  0001 C CNN
-F 1 "VCC" H 2865 3723 50  0000 C CNN
-F 2 "" H 2850 3550 50  0001 C CNN
-F 3 "" H 2850 3550 50  0001 C CNN
-	1    2850 3550
-	1    0    0    -1  
-$EndComp
 $Comp
 L bjs-passives:CAPACITOR C?
 U 1 1 604F0F65
@@ -799,38 +648,36 @@ F 3 "" H 4150 4150 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2650 4250 2650 4600
-Wire Wire Line
-	4300 4650 4300 4600
 $Comp
 L bjs-passives:74HC14 U?
-U 1 1 604F0F79
+U 4 1 604F0F79
 P 3050 4150
 AR Path="/5FE3CAD9/604F0F79" Ref="U?"  Part="1" 
 AR Path="/60514F63/604F0F79" Ref="U?"  Part="1" 
 AR Path="/605151E7/604F0F79" Ref="U?"  Part="1" 
-AR Path="/60515B5F/604F0F79" Ref="U?"  Part="1" 
+AR Path="/60515B5F/604F0F79" Ref="U?"  Part="4" 
 AR Path="/605160F4/604F0F79" Ref="U?"  Part="1" 
 F 0 "U?" H 3050 4441 39  0000 C CNN
 F 1 "74HC14" H 3050 4366 39  0000 C CNN
 F 2 "" H 3050 4150 39  0001 C CNN
 F 3 "" H 3050 4150 39  0001 C CNN
-	1    3050 4150
+	4    3050 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L bjs-passives:74HC14 U?
-U 2 1 604F0F7F
+U 6 1 604F0F7F
 P 4800 4150
 AR Path="/5FE3CAD9/604F0F7F" Ref="U?"  Part="2" 
 AR Path="/60514F63/604F0F7F" Ref="U?"  Part="2" 
 AR Path="/605151E7/604F0F7F" Ref="U?"  Part="2" 
-AR Path="/60515B5F/604F0F7F" Ref="U?"  Part="2" 
+AR Path="/60515B5F/604F0F7F" Ref="U?"  Part="6" 
 AR Path="/605160F4/604F0F7F" Ref="U?"  Part="2" 
 F 0 "U?" H 4800 4441 39  0000 C CNN
 F 1 "74HC14" H 4800 4366 39  0000 C CNN
 F 2 "" H 4800 4150 39  0001 C CNN
 F 3 "" H 4800 4150 39  0001 C CNN
-	2    4800 4150
+	6    4800 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -920,18 +767,18 @@ F 3 "" H 5200 4300 50  0001 C CNN
 $EndComp
 $Comp
 L bjs-passives:74HC14 U?
-U 3 1 604F0FAC
+U 5 1 604F0FAC
 P 3700 4150
 AR Path="/5FE3CAD9/604F0FAC" Ref="U?"  Part="3" 
 AR Path="/60514F63/604F0FAC" Ref="U?"  Part="3" 
 AR Path="/605151E7/604F0FAC" Ref="U?"  Part="3" 
-AR Path="/60515B5F/604F0FAC" Ref="U?"  Part="3" 
+AR Path="/60515B5F/604F0FAC" Ref="U?"  Part="5" 
 AR Path="/605160F4/604F0FAC" Ref="U?"  Part="3" 
 F 0 "U?" H 3700 4441 39  0000 C CNN
 F 1 "74HC14" H 3700 4366 39  0000 C CNN
 F 2 "" H 3700 4150 39  0001 C CNN
 F 3 "" H 3700 4150 39  0001 C CNN
-	3    3700 4150
+	5    3700 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -963,18 +810,18 @@ Wire Wire Line
 	4400 4600 5200 4600
 $Comp
 L bjs-discrete:ULN2803 U?
-U 1 1 604F0FC1
+U 2 1 604F0FC1
 P 5800 4150
 AR Path="/5FE3CAD9/604F0FC1" Ref="U?"  Part="1" 
 AR Path="/60514F63/604F0FC1" Ref="U?"  Part="1" 
 AR Path="/605151E7/604F0FC1" Ref="U?"  Part="1" 
-AR Path="/60515B5F/604F0FC1" Ref="U?"  Part="1" 
+AR Path="/60515B5F/604F0FC1" Ref="U?"  Part="2" 
 AR Path="/605160F4/604F0FC1" Ref="U?"  Part="1" 
 F 0 "U?" H 5800 4391 39  0000 C CNN
 F 1 "ULN2803" H 5800 4316 39  0000 C CNN
 F 2 "" H 5800 4150 50  0001 C CNN
 F 3 "" H 5800 4150 50  0001 C CNN
-	1    5800 4150
+	2    5800 4150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1018,4 +865,76 @@ DIR
 Wire Wire Line
 	6250 4150 6050 4150
 Connection ~ 6050 4150
+Wire Wire Line
+	8600 1150 8600 1350
+Wire Wire Line
+	8250 1150 8250 1350
+Wire Wire Line
+	8250 750  8250 950 
+Wire Wire Line
+	8600 750  8600 950 
+Wire Wire Line
+	9550 750  9550 950 
+Wire Wire Line
+	9550 1150 9550 1350
+Wire Wire Line
+	9900 1150 9900 1350
+Wire Wire Line
+	9900 750  9900 950 
+Text HLabel 10700 750  2    50   Input ~ 0
+VM+
+Wire Wire Line
+	9900 750  10250 750 
+Wire Wire Line
+	8600 750  8900 750 
+Wire Wire Line
+	8900 750  9550 750 
+Connection ~ 8900 750 
+Connection ~ 9550 750 
+Wire Wire Line
+	10700 750  10250 750 
+Connection ~ 10250 750 
+Text Label 10450 750  0    50   ~ 0
+VM+
+Wire Wire Line
+	2750 1450 2850 1450
+Connection ~ 2850 1450
+Text Label 2900 1450 0    50   ~ 0
+VM+
+Wire Wire Line
+	2850 1450 3150 1450
+Text HLabel 10700 1350 2    50   Input ~ 0
+VM-
+Wire Wire Line
+	10700 1350 10250 1350
+Connection ~ 10250 1350
+Wire Wire Line
+	9900 1350 10250 1350
+Text Label 10450 1350 0    50   ~ 0
+VM-
+Wire Wire Line
+	4300 2500 4300 2600
+Connection ~ 4300 2600
+Wire Wire Line
+	4300 2600 4400 2600
+Text Label 4100 2600 0    50   ~ 0
+VM-
+Wire Wire Line
+	4050 2600 4300 2600
+Wire Wire Line
+	2950 3550 2850 3550
+Wire Wire Line
+	2650 3550 2850 3550
+Connection ~ 2850 3550
+Text Label 2650 3550 0    50   ~ 0
+VM+
+Wire Wire Line
+	4300 4700 4400 4700
+Wire Wire Line
+	4300 4600 4300 4700
+Wire Wire Line
+	4050 4700 4300 4700
+Connection ~ 4300 4700
+Text Label 4100 4700 0    50   ~ 0
+VM-
 $EndSCHEMATC
