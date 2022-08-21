@@ -1,0 +1,3115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>/home/bjs/bjs/github/briansidebotham/cnc-controller/electronics/controller/controller.kicad_sch</source>
+    <date>Sun 21 Aug 2022 12:29:14 BST</date>
+    <tool>Eeschema 6.0.7-1.fc36</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>controller.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>raspberrypi.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>isolated_outputs.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>isolated_outputs.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>isolated_outputs.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pwmfilter.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>pwmfilter.kicad_sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+        <comment number="5" value=""/>
+        <comment number="6" value=""/>
+        <comment number="7" value=""/>
+        <comment number="8" value=""/>
+        <comment number="9" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="C1">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000627c4764</tstamps>
+    </comp>
+    <comp ref="C2">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000062567f54</tstamps>
+    </comp>
+    <comp ref="C3">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000062568bb5</tstamps>
+    </comp>
+    <comp ref="C4">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000062569d06</tstamps>
+    </comp>
+    <comp ref="C5">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006256a932</tstamps>
+    </comp>
+    <comp ref="J1">
+      <value>TEVALULOK4W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_4_1586768-4</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK4W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>66b5829a-4d44-48da-9c4b-97b33aadd48f</tstamps>
+    </comp>
+    <comp ref="J2">
+      <value>TEVALULOK12W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_12_1-1586768-2</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK12W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000621b657b</tstamps>
+    </comp>
+    <comp ref="J3">
+      <value>TEVALULOK12W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_12_1-1586768-2</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK12W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006230662b</tstamps>
+    </comp>
+    <comp ref="J4">
+      <value>TEVALULOK12W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_12_1-1586768-2</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK12W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000624288bc</tstamps>
+    </comp>
+    <comp ref="J8">
+      <value>TEVALULOK4W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_4_1586768-4</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK4W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7944fd53-a48e-4b14-8f75-8d9b2da3a590</tstamps>
+    </comp>
+    <comp ref="J10">
+      <value>TEVALULOK8W</value>
+      <footprint>te-connectivity_val-u-lok_vertical:te-connectivity_val-u-lok_vertical_8_1586768-8</footprint>
+      <libsource lib="bjs-connectors" part="TEVALULOK8W" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006253f58f</tstamps>
+    </comp>
+    <comp ref="LD1">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000062037cb7</tstamps>
+    </comp>
+    <comp ref="LD2">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000061ef4502</tstamps>
+    </comp>
+    <comp ref="R1">
+      <value>RESISTOR</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-0000620387cd</tstamps>
+    </comp>
+    <comp ref="R2">
+      <value>2k2</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-000061ef4cce</tstamps>
+    </comp>
+    <comp ref="U1">
+      <value>78L05SMD</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="bjs-voltageregs" part="78LXXSMD" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006254e979</tstamps>
+    </comp>
+    <comp ref="U2">
+      <value>78L10SMD</value>
+      <footprint>Package_SO:SOIC-8_3.9x4.9mm_P1.27mm</footprint>
+      <libsource lib="bjs-voltageregs" part="78LXXSMD" description=""/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="controller.kicad_sch"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>00000000-0000-0000-0000-00006254f937</tstamps>
+    </comp>
+    <comp ref="F1">
+      <value>M3</value>
+      <footprint>mechanical:M3</footprint>
+      <libsource lib="bjs-mechanical" part="M3" description=""/>
+      <property name="Sheetname" value="rpiconnectivity"/>
+      <property name="Sheetfile" value="raspberrypi.kicad_sch"/>
+      <sheetpath names="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/"/>
+      <tstamps>abac746d-d39e-4005-85c7-1155b9ef676a</tstamps>
+    </comp>
+    <comp ref="F2">
+      <value>M3</value>
+      <footprint>mechanical:M3</footprint>
+      <libsource lib="bjs-mechanical" part="M3" description=""/>
+      <property name="Sheetname" value="rpiconnectivity"/>
+      <property name="Sheetfile" value="raspberrypi.kicad_sch"/>
+      <sheetpath names="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/"/>
+      <tstamps>66dfb2c3-e414-45c1-a0d1-9da57bdf2707</tstamps>
+    </comp>
+    <comp ref="F3">
+      <value>M3</value>
+      <footprint>mechanical:M3</footprint>
+      <libsource lib="bjs-mechanical" part="M3" description=""/>
+      <property name="Sheetname" value="rpiconnectivity"/>
+      <property name="Sheetfile" value="raspberrypi.kicad_sch"/>
+      <sheetpath names="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/"/>
+      <tstamps>e61e4ee8-1f9e-4ba6-852c-bb52a26d1acf</tstamps>
+    </comp>
+    <comp ref="F4">
+      <value>M3</value>
+      <footprint>mechanical:M3</footprint>
+      <libsource lib="bjs-mechanical" part="M3" description=""/>
+      <property name="Sheetname" value="rpiconnectivity"/>
+      <property name="Sheetfile" value="raspberrypi.kicad_sch"/>
+      <sheetpath names="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/"/>
+      <tstamps>56a66bdd-3b6a-4dec-98eb-efe27ed3e71f</tstamps>
+    </comp>
+    <comp ref="U11">
+      <value>RPI40PIN</value>
+      <footprint>rpi_footprints:rpi-40pin</footprint>
+      <libsource lib="bjs-modules" part="RPI40PIN" description=""/>
+      <property name="Sheetname" value="rpiconnectivity"/>
+      <property name="Sheetfile" value="raspberrypi.kicad_sch"/>
+      <sheetpath names="/rpiconnectivity/" tstamps="/00000000-0000-0000-0000-0000628b6a39/"/>
+      <tstamps>00000000-0000-0000-0000-0000628ba8ad</tstamps>
+    </comp>
+    <comp ref="C14">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9c998</tstamps>
+    </comp>
+    <comp ref="C15">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9d9e3</tstamps>
+    </comp>
+    <comp ref="LD3">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce4d89</tstamps>
+    </comp>
+    <comp ref="LD4">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf3a1a</tstamps>
+    </comp>
+    <comp ref="LD5">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf43ac</tstamps>
+    </comp>
+    <comp ref="LD6">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf487f</tstamps>
+    </comp>
+    <comp ref="LD7">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf4fbd</tstamps>
+    </comp>
+    <comp ref="LD8">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf532e</tstamps>
+    </comp>
+    <comp ref="LD9">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf580c</tstamps>
+    </comp>
+    <comp ref="LD10">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf5e6f</tstamps>
+    </comp>
+    <comp ref="O1">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cd01a</tstamps>
+    </comp>
+    <comp ref="O2">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cdae2</tstamps>
+    </comp>
+    <comp ref="O3">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce149</tstamps>
+    </comp>
+    <comp ref="O4">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce907</tstamps>
+    </comp>
+    <comp ref="O5">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cee6d</tstamps>
+    </comp>
+    <comp ref="O6">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf2d4</tstamps>
+    </comp>
+    <comp ref="O7">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf7ae</tstamps>
+    </comp>
+    <comp ref="O8">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cfeee</tstamps>
+    </comp>
+    <comp ref="R15">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e152</tstamps>
+    </comp>
+    <comp ref="R16">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e49877</tstamps>
+    </comp>
+    <comp ref="R17">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba70</tstamps>
+    </comp>
+    <comp ref="R18">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab3</tstamps>
+    </comp>
+    <comp ref="R19">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad3</tstamps>
+    </comp>
+    <comp ref="R20">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af3</tstamps>
+    </comp>
+    <comp ref="R21">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c467</tstamps>
+    </comp>
+    <comp ref="R22">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c487</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e732</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4987d</tstamps>
+    </comp>
+    <comp ref="R25">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba76</tstamps>
+    </comp>
+    <comp ref="R26">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab9</tstamps>
+    </comp>
+    <comp ref="R27">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad9</tstamps>
+    </comp>
+    <comp ref="R28">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af9</tstamps>
+    </comp>
+    <comp ref="R29">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c46d</tstamps>
+    </comp>
+    <comp ref="R30">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c48d</tstamps>
+    </comp>
+    <comp ref="R31">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce5c8e</tstamps>
+    </comp>
+    <comp ref="R32">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf69db</tstamps>
+    </comp>
+    <comp ref="R33">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf6d12</tstamps>
+    </comp>
+    <comp ref="R34">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7105</tstamps>
+    </comp>
+    <comp ref="R35">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7405</tstamps>
+    </comp>
+    <comp ref="R36">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf78fa</tstamps>
+    </comp>
+    <comp ref="R37">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7b55</tstamps>
+    </comp>
+    <comp ref="R38">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7da7</tstamps>
+    </comp>
+    <comp ref="U4">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>915da09b-1aa6-4182-903e-a06153f90676 520c753b-2915-4b71-bb18-247e73fafa1b 00000000-0000-0000-0000-000061e99d1a 00000000-0000-0000-0000-000061e49883 00000000-0000-0000-0000-000061e4ba7c 00000000-0000-0000-0000-000061e53abf 00000000-0000-0000-0000-000061e3f130</tstamps>
+    </comp>
+    <comp ref="U5">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="Isolated Outputs"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/Isolated Outputs/" tstamps="/00000000-0000-0000-0000-000061e3b1c4/"/>
+      <tstamps>2498b49e-ad0b-432a-ad88-60df1fd40fca 0d346582-c831-466b-8bd8-dbf9cd1a94b0 00000000-0000-0000-0000-000061e9af4a 00000000-0000-0000-0000-000061e53aff 00000000-0000-0000-0000-000061e7c473 00000000-0000-0000-0000-000061e7c493 00000000-0000-0000-0000-000061e53adf</tstamps>
+    </comp>
+    <comp ref="C16">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9c998</tstamps>
+    </comp>
+    <comp ref="C17">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9d9e3</tstamps>
+    </comp>
+    <comp ref="LD11">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce4d89</tstamps>
+    </comp>
+    <comp ref="LD12">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf3a1a</tstamps>
+    </comp>
+    <comp ref="LD13">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf43ac</tstamps>
+    </comp>
+    <comp ref="LD14">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf487f</tstamps>
+    </comp>
+    <comp ref="LD15">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf4fbd</tstamps>
+    </comp>
+    <comp ref="LD16">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf532e</tstamps>
+    </comp>
+    <comp ref="LD17">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf580c</tstamps>
+    </comp>
+    <comp ref="LD18">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf5e6f</tstamps>
+    </comp>
+    <comp ref="O9">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cd01a</tstamps>
+    </comp>
+    <comp ref="O10">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cdae2</tstamps>
+    </comp>
+    <comp ref="O11">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce149</tstamps>
+    </comp>
+    <comp ref="O12">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce907</tstamps>
+    </comp>
+    <comp ref="O13">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cee6d</tstamps>
+    </comp>
+    <comp ref="O14">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf2d4</tstamps>
+    </comp>
+    <comp ref="O15">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf7ae</tstamps>
+    </comp>
+    <comp ref="O16">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cfeee</tstamps>
+    </comp>
+    <comp ref="R39">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e152</tstamps>
+    </comp>
+    <comp ref="R40">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e49877</tstamps>
+    </comp>
+    <comp ref="R41">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba70</tstamps>
+    </comp>
+    <comp ref="R42">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab3</tstamps>
+    </comp>
+    <comp ref="R43">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad3</tstamps>
+    </comp>
+    <comp ref="R44">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af3</tstamps>
+    </comp>
+    <comp ref="R45">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c467</tstamps>
+    </comp>
+    <comp ref="R46">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c487</tstamps>
+    </comp>
+    <comp ref="R47">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e732</tstamps>
+    </comp>
+    <comp ref="R48">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4987d</tstamps>
+    </comp>
+    <comp ref="R49">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba76</tstamps>
+    </comp>
+    <comp ref="R50">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab9</tstamps>
+    </comp>
+    <comp ref="R51">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad9</tstamps>
+    </comp>
+    <comp ref="R52">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af9</tstamps>
+    </comp>
+    <comp ref="R53">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c46d</tstamps>
+    </comp>
+    <comp ref="R54">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c48d</tstamps>
+    </comp>
+    <comp ref="R55">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce5c8e</tstamps>
+    </comp>
+    <comp ref="R56">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf69db</tstamps>
+    </comp>
+    <comp ref="R57">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf6d12</tstamps>
+    </comp>
+    <comp ref="R58">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7105</tstamps>
+    </comp>
+    <comp ref="R59">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7405</tstamps>
+    </comp>
+    <comp ref="R60">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf78fa</tstamps>
+    </comp>
+    <comp ref="R61">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7b55</tstamps>
+    </comp>
+    <comp ref="R62">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7da7</tstamps>
+    </comp>
+    <comp ref="U6">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>915da09b-1aa6-4182-903e-a06153f90676 520c753b-2915-4b71-bb18-247e73fafa1b 00000000-0000-0000-0000-000061e99d1a 00000000-0000-0000-0000-000061e49883 00000000-0000-0000-0000-000061e4ba7c 00000000-0000-0000-0000-000061e53abf 00000000-0000-0000-0000-000061e3f130</tstamps>
+    </comp>
+    <comp ref="U7">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="sheet6229862E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6229862E/" tstamps="/00000000-0000-0000-0000-000062298682/"/>
+      <tstamps>2498b49e-ad0b-432a-ad88-60df1fd40fca 0d346582-c831-466b-8bd8-dbf9cd1a94b0 00000000-0000-0000-0000-000061e9af4a 00000000-0000-0000-0000-000061e53aff 00000000-0000-0000-0000-000061e7c473 00000000-0000-0000-0000-000061e7c493 00000000-0000-0000-0000-000061e53adf</tstamps>
+    </comp>
+    <comp ref="C18">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9c998</tstamps>
+    </comp>
+    <comp ref="C19">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e9d9e3</tstamps>
+    </comp>
+    <comp ref="LD19">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce4d89</tstamps>
+    </comp>
+    <comp ref="LD20">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf3a1a</tstamps>
+    </comp>
+    <comp ref="LD21">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf43ac</tstamps>
+    </comp>
+    <comp ref="LD22">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf487f</tstamps>
+    </comp>
+    <comp ref="LD23">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf4fbd</tstamps>
+    </comp>
+    <comp ref="LD24">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf532e</tstamps>
+    </comp>
+    <comp ref="LD25">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf580c</tstamps>
+    </comp>
+    <comp ref="LD26">
+      <value>LED</value>
+      <footprint>LED_SMD:LED_0805_2012Metric</footprint>
+      <libsource lib="bjs-discrete" part="LED" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf5e6f</tstamps>
+    </comp>
+    <comp ref="O17">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cd01a</tstamps>
+    </comp>
+    <comp ref="O18">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cdae2</tstamps>
+    </comp>
+    <comp ref="O19">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce149</tstamps>
+    </comp>
+    <comp ref="O20">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624ce907</tstamps>
+    </comp>
+    <comp ref="O21">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cee6d</tstamps>
+    </comp>
+    <comp ref="O22">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf2d4</tstamps>
+    </comp>
+    <comp ref="O23">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cf7ae</tstamps>
+    </comp>
+    <comp ref="O24">
+      <value>VOM617A-4T</value>
+      <footprint>smd:VOMOPTO</footprint>
+      <libsource lib="bjs-optocouplers" part="VOM617A-4T" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000624cfeee</tstamps>
+    </comp>
+    <comp ref="R63">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e152</tstamps>
+    </comp>
+    <comp ref="R64">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e49877</tstamps>
+    </comp>
+    <comp ref="R65">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba70</tstamps>
+    </comp>
+    <comp ref="R66">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab3</tstamps>
+    </comp>
+    <comp ref="R67">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad3</tstamps>
+    </comp>
+    <comp ref="R68">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af3</tstamps>
+    </comp>
+    <comp ref="R69">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c467</tstamps>
+    </comp>
+    <comp ref="R70">
+      <value>680R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c487</tstamps>
+    </comp>
+    <comp ref="R71">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e3e732</tstamps>
+    </comp>
+    <comp ref="R72">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4987d</tstamps>
+    </comp>
+    <comp ref="R73">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e4ba76</tstamps>
+    </comp>
+    <comp ref="R74">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ab9</tstamps>
+    </comp>
+    <comp ref="R75">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53ad9</tstamps>
+    </comp>
+    <comp ref="R76">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e53af9</tstamps>
+    </comp>
+    <comp ref="R77">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c46d</tstamps>
+    </comp>
+    <comp ref="R78">
+      <value>1k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061e7c48d</tstamps>
+    </comp>
+    <comp ref="R79">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062ce5c8e</tstamps>
+    </comp>
+    <comp ref="R80">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf69db</tstamps>
+    </comp>
+    <comp ref="R81">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf6d12</tstamps>
+    </comp>
+    <comp ref="R82">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7105</tstamps>
+    </comp>
+    <comp ref="R83">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7405</tstamps>
+    </comp>
+    <comp ref="R84">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf78fa</tstamps>
+    </comp>
+    <comp ref="R85">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7b55</tstamps>
+    </comp>
+    <comp ref="R86">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062cf7da7</tstamps>
+    </comp>
+    <comp ref="U8">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>915da09b-1aa6-4182-903e-a06153f90676 520c753b-2915-4b71-bb18-247e73fafa1b 00000000-0000-0000-0000-000061e99d1a 00000000-0000-0000-0000-000061e49883 00000000-0000-0000-0000-000061e4ba7c 00000000-0000-0000-0000-000061e53abf 00000000-0000-0000-0000-000061e3f130</tstamps>
+    </comp>
+    <comp ref="U9">
+      <value>74HC14</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-passives" part="74HC14" description=""/>
+      <property name="Sheetname" value="sheet6240539E"/>
+      <property name="Sheetfile" value="isolated_outputs.kicad_sch"/>
+      <sheetpath names="/sheet6240539E/" tstamps="/00000000-0000-0000-0000-0000624053f2/"/>
+      <tstamps>2498b49e-ad0b-432a-ad88-60df1fd40fca 0d346582-c831-466b-8bd8-dbf9cd1a94b0 00000000-0000-0000-0000-000061e9af4a 00000000-0000-0000-0000-000061e53aff 00000000-0000-0000-0000-000061e7c473 00000000-0000-0000-0000-000061e7c493 00000000-0000-0000-0000-000061e53adf</tstamps>
+    </comp>
+    <comp ref="C20">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f63</tstamps>
+    </comp>
+    <comp ref="C21">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f69</tstamps>
+    </comp>
+    <comp ref="C22">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-00006201dd04</tstamps>
+    </comp>
+    <comp ref="C23">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f98</tstamps>
+    </comp>
+    <comp ref="C24">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f9e</tstamps>
+    </comp>
+    <comp ref="C25">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fc8</tstamps>
+    </comp>
+    <comp ref="C26">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fce</tstamps>
+    </comp>
+    <comp ref="C27">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000062002d73</tstamps>
+    </comp>
+    <comp ref="R87">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93ff0</tstamps>
+    </comp>
+    <comp ref="R88">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f5d</tstamps>
+    </comp>
+    <comp ref="R89">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f8c</tstamps>
+    </comp>
+    <comp ref="R90">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f92</tstamps>
+    </comp>
+    <comp ref="R91">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fbc</tstamps>
+    </comp>
+    <comp ref="R92">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fc2</tstamps>
+    </comp>
+    <comp ref="R93">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061fea9c6</tstamps>
+    </comp>
+    <comp ref="R94">
+      <value>1k5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061feb0cc</tstamps>
+    </comp>
+    <comp ref="R95">
+      <value>120k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f94004</tstamps>
+    </comp>
+    <comp ref="R96">
+      <value>1k5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000620084df</tstamps>
+    </comp>
+    <comp ref="R97">
+      <value>120k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-00006200965b</tstamps>
+    </comp>
+    <comp ref="R98">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-0000620153fb</tstamps>
+    </comp>
+    <comp ref="U10">
+      <value>MC33204</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-amplifiers" part="MC33204" description=""/>
+      <property name="Sheetname" value="sheet628425E4"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/sheet628425E4/" tstamps="/00000000-0000-0000-0000-0000628425f2/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93faa 00000000-0000-0000-0000-000061f93ffa 00000000-0000-0000-0000-000061f93fda 00000000-0000-0000-0000-000061f93f75</tstamps>
+    </comp>
+    <comp ref="C6">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f63</tstamps>
+    </comp>
+    <comp ref="C7">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f69</tstamps>
+    </comp>
+    <comp ref="C8">
+      <value>100n</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-00006201dd04</tstamps>
+    </comp>
+    <comp ref="C9">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f98</tstamps>
+    </comp>
+    <comp ref="C10">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f9e</tstamps>
+    </comp>
+    <comp ref="C11">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fc8</tstamps>
+    </comp>
+    <comp ref="C12">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fce</tstamps>
+    </comp>
+    <comp ref="C13">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="CAPACITOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000062002d73</tstamps>
+    </comp>
+    <comp ref="R3">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93ff0</tstamps>
+    </comp>
+    <comp ref="R4">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f5d</tstamps>
+    </comp>
+    <comp ref="R5">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f8c</tstamps>
+    </comp>
+    <comp ref="R6">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93f92</tstamps>
+    </comp>
+    <comp ref="R7">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fbc</tstamps>
+    </comp>
+    <comp ref="R8">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93fc2</tstamps>
+    </comp>
+    <comp ref="R9">
+      <value>68k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061fea9c6</tstamps>
+    </comp>
+    <comp ref="R10">
+      <value>1k5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061feb0cc</tstamps>
+    </comp>
+    <comp ref="R11">
+      <value>120k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f94004</tstamps>
+    </comp>
+    <comp ref="R12">
+      <value>1k5</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-0000620084df</tstamps>
+    </comp>
+    <comp ref="R13">
+      <value>120k</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-00006200965b</tstamps>
+    </comp>
+    <comp ref="R14">
+      <value>330R</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric</footprint>
+      <libsource lib="bjs-passives" part="RESISTOR" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-0000620153fb</tstamps>
+    </comp>
+    <comp ref="U3">
+      <value>MC33204</value>
+      <footprint>Package_SO:SOIC-14_3.9x8.7mm_P1.27mm</footprint>
+      <libsource lib="bjs-amplifiers" part="MC33204" description=""/>
+      <property name="Sheetname" value="PWM Filter"/>
+      <property name="Sheetfile" value="pwmfilter.kicad_sch"/>
+      <sheetpath names="/PWM Filter/" tstamps="/00000000-0000-0000-0000-000061f78d04/"/>
+      <tstamps>00000000-0000-0000-0000-000061f93faa 00000000-0000-0000-0000-000061f93ffa 00000000-0000-0000-0000-000061f93fda 00000000-0000-0000-0000-000061f93f75</tstamps>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="bjs-amplifiers" part="MC33204">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">bjs-amplifiers_MC33204</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="input"/>
+        <pin num="2" name="-" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="VCC" type="power_in"/>
+        <pin num="5" name="+" type="input"/>
+        <pin num="6" name="-" type="input"/>
+        <pin num="7" name="" type="output"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="-" type="input"/>
+        <pin num="10" name="+" type="input"/>
+        <pin num="11" name="VEE" type="power_in"/>
+        <pin num="12" name="+" type="input"/>
+        <pin num="13" name="-" type="input"/>
+        <pin num="14" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-connectors" part="TEVALULOK12W">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEVALULOK12W</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="input"/>
+        <pin num="11" name="" type="input"/>
+        <pin num="12" name="" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-connectors" part="TEVALULOK4W">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEVALULOK4W</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-connectors" part="TEVALULOK8W">
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">TEVALULOK8W</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="passive"/>
+        <pin num="5" name="" type="passive"/>
+        <pin num="6" name="" type="passive"/>
+        <pin num="7" name="" type="passive"/>
+        <pin num="8" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-discrete" part="LED">
+      <fields>
+        <field name="Reference">LD</field>
+        <field name="Value">bjs-discrete_LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-mechanical" part="M3">
+      <fields>
+        <field name="Reference">F</field>
+        <field name="Value">M3</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-modules" part="RPI40PIN">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RPI40PIN</field>
+      </fields>
+      <pins>
+        <pin num="1" name="3V3" type="power_out"/>
+        <pin num="2" name="5V" type="power_in"/>
+        <pin num="3" name="GPIO2" type="passive"/>
+        <pin num="4" name="5V" type="power_in"/>
+        <pin num="5" name="GPIO3" type="passive"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GPIO4" type="passive"/>
+        <pin num="8" name="GPIO14" type="passive"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="GPIO15" type="passive"/>
+        <pin num="11" name="GPIO17" type="passive"/>
+        <pin num="12" name="GPIO18" type="passive"/>
+        <pin num="13" name="GPIO27" type="passive"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="GPIO22" type="passive"/>
+        <pin num="16" name="GPIO23" type="passive"/>
+        <pin num="17" name="3V3" type="power_out"/>
+        <pin num="18" name="GPIO24" type="passive"/>
+        <pin num="19" name="GPIO10" type="passive"/>
+        <pin num="20" name="GND" type="power_in"/>
+        <pin num="21" name="GPIO9" type="passive"/>
+        <pin num="22" name="GPIO25" type="passive"/>
+        <pin num="23" name="GPIO11" type="passive"/>
+        <pin num="24" name="GPIO8" type="passive"/>
+        <pin num="25" name="GND" type="power_in"/>
+        <pin num="26" name="GPIO7" type="passive"/>
+        <pin num="27" name="ID_SD" type="passive"/>
+        <pin num="28" name="ID_SC" type="passive"/>
+        <pin num="29" name="GPIO5" type="passive"/>
+        <pin num="30" name="GND" type="power_in"/>
+        <pin num="31" name="GPIO6" type="passive"/>
+        <pin num="32" name="GPIO12" type="passive"/>
+        <pin num="33" name="GPIO13" type="passive"/>
+        <pin num="34" name="GND" type="power_in"/>
+        <pin num="35" name="GPIO19" type="passive"/>
+        <pin num="36" name="GPIO16" type="passive"/>
+        <pin num="37" name="GPIO26" type="passive"/>
+        <pin num="38" name="GPIO20" type="passive"/>
+        <pin num="39" name="GND" type="power_in"/>
+        <pin num="40" name="GPIO21" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-optocouplers" part="VOM617A-4T">
+      <fields>
+        <field name="Reference">O</field>
+        <field name="Value">bjs-optocouplers_VOM617A-4T</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+        <pin num="3" name="" type="passive"/>
+        <pin num="4" name="" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-passives" part="74HC14">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">74HC14</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+        <pin num="2" name="2" type="output"/>
+        <pin num="3" name="" type="input"/>
+        <pin num="4" name="" type="output"/>
+        <pin num="5" name="" type="input"/>
+        <pin num="6" name="" type="output"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="" type="output"/>
+        <pin num="9" name="" type="input"/>
+        <pin num="10" name="" type="output"/>
+        <pin num="11" name="" type="input"/>
+        <pin num="12" name="" type="output"/>
+        <pin num="13" name="" type="input"/>
+        <pin num="14" name="VCC" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-passives" part="CAPACITOR">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CAPACITOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-passives" part="RESISTOR">
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RESISTOR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="bjs-voltageregs" part="78LXXSMD">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">78LXXSMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VO" type="power_out"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="" type="no_connect"/>
+        <pin num="5" name="" type="no_connect"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="GND" type="power_in"/>
+        <pin num="8" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="bjs-connectors">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-connectors.kicad_sym</uri>
+    </library>
+    <library logical="bjs-mechanical">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-mechanical.kicad_sym</uri>
+    </library>
+    <library logical="bjs-modules">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-modules.kicad_sym</uri>
+    </library>
+    <library logical="bjs-optocouplers">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-optocouplers.kicad_sym</uri>
+    </library>
+    <library logical="bjs-passives">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-passives.kicad_sym</uri>
+    </library>
+    <library logical="bjs-voltageregs">
+      <uri>/home/bjs/bjs/github/briansidebotham/kicad-parts/symbols/bjs-voltageregs.kicad_sym</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="+10V">
+      <node ref="C22" pin="2" pintype="passive"/>
+      <node ref="C5" pin="2" pintype="passive"/>
+      <node ref="C8" pin="2" pintype="passive"/>
+      <node ref="U10" pin="4" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U2" pin="1" pinfunction="VO" pintype="power_out"/>
+      <node ref="U3" pin="4" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="2" name="+12V">
+      <node ref="C2" pin="2" pintype="passive"/>
+      <node ref="C4" pin="2" pintype="passive"/>
+      <node ref="J10" pin="5" pintype="passive"/>
+      <node ref="J8" pin="1" pintype="passive"/>
+      <node ref="J8" pin="2" pintype="passive"/>
+      <node ref="LD2" pin="2" pintype="passive"/>
+      <node ref="U1" pin="8" pinfunction="VIN" pintype="power_in"/>
+      <node ref="U2" pin="8" pinfunction="VIN" pintype="power_in"/>
+    </net>
+    <net code="3" name="/0-10V-CH1">
+      <node ref="J10" pin="1" pintype="passive"/>
+      <node ref="R98" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="4" name="/0-10V-CH2">
+      <node ref="J10" pin="3" pintype="passive"/>
+      <node ref="R14" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="5" name="/IN1">
+      <node ref="J4" pin="3" pintype="passive"/>
+      <node ref="R63" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="6" name="/IN2">
+      <node ref="J4" pin="4" pintype="passive"/>
+      <node ref="R64" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="7" name="/IN3">
+      <node ref="J4" pin="5" pintype="passive"/>
+      <node ref="R65" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="8" name="/IN4">
+      <node ref="J4" pin="6" pintype="passive"/>
+      <node ref="R66" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="9" name="/IN5">
+      <node ref="J4" pin="7" pintype="passive"/>
+      <node ref="R67" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="10" name="/IN6">
+      <node ref="J4" pin="8" pintype="passive"/>
+      <node ref="R68" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="11" name="/IN7">
+      <node ref="J4" pin="9" pintype="input"/>
+      <node ref="R69" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="12" name="/IN8">
+      <node ref="J4" pin="10" pintype="input"/>
+      <node ref="R70" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="13" name="/OUT1">
+      <node ref="J2" pin="3" pintype="passive"/>
+      <node ref="LD3" pin="2" pintype="passive"/>
+      <node ref="U4" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="14" name="/OUT2">
+      <node ref="J2" pin="4" pintype="passive"/>
+      <node ref="LD4" pin="2" pintype="passive"/>
+      <node ref="U4" pin="4" pintype="output"/>
+    </net>
+    <net code="15" name="/OUT3">
+      <node ref="J2" pin="5" pintype="passive"/>
+      <node ref="LD5" pin="2" pintype="passive"/>
+      <node ref="U4" pin="6" pintype="output"/>
+    </net>
+    <net code="16" name="/OUT4">
+      <node ref="J2" pin="6" pintype="passive"/>
+      <node ref="LD6" pin="2" pintype="passive"/>
+      <node ref="U4" pin="8" pintype="output"/>
+    </net>
+    <net code="17" name="/OUT5">
+      <node ref="J2" pin="7" pintype="passive"/>
+      <node ref="LD7" pin="2" pintype="passive"/>
+      <node ref="U5" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="18" name="/OUT6">
+      <node ref="J2" pin="8" pintype="passive"/>
+      <node ref="LD8" pin="2" pintype="passive"/>
+      <node ref="U5" pin="4" pintype="output"/>
+    </net>
+    <net code="19" name="/OUT7">
+      <node ref="J2" pin="9" pintype="input"/>
+      <node ref="LD9" pin="2" pintype="passive"/>
+      <node ref="U5" pin="6" pintype="output"/>
+    </net>
+    <net code="20" name="/OUT8">
+      <node ref="J2" pin="10" pintype="input"/>
+      <node ref="LD10" pin="2" pintype="passive"/>
+      <node ref="U5" pin="8" pintype="output"/>
+    </net>
+    <net code="21" name="/OUT9">
+      <node ref="J3" pin="3" pintype="passive"/>
+      <node ref="LD11" pin="2" pintype="passive"/>
+      <node ref="U6" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="22" name="/OUT10">
+      <node ref="J3" pin="4" pintype="passive"/>
+      <node ref="LD12" pin="2" pintype="passive"/>
+      <node ref="U6" pin="4" pintype="output"/>
+    </net>
+    <net code="23" name="/OUT11">
+      <node ref="J3" pin="5" pintype="passive"/>
+      <node ref="LD13" pin="2" pintype="passive"/>
+      <node ref="U6" pin="6" pintype="output"/>
+    </net>
+    <net code="24" name="/OUT12">
+      <node ref="J3" pin="6" pintype="passive"/>
+      <node ref="LD14" pin="2" pintype="passive"/>
+      <node ref="U6" pin="8" pintype="output"/>
+    </net>
+    <net code="25" name="/OUT13">
+      <node ref="J3" pin="7" pintype="passive"/>
+      <node ref="LD15" pin="2" pintype="passive"/>
+      <node ref="U7" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="26" name="/OUT14">
+      <node ref="J3" pin="8" pintype="passive"/>
+      <node ref="LD16" pin="2" pintype="passive"/>
+      <node ref="U7" pin="4" pintype="output"/>
+    </net>
+    <net code="27" name="/OUT15">
+      <node ref="J3" pin="9" pintype="input"/>
+      <node ref="LD17" pin="2" pintype="passive"/>
+      <node ref="R87" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="6" pintype="output"/>
+    </net>
+    <net code="28" name="/OUT16">
+      <node ref="J3" pin="10" pintype="input"/>
+      <node ref="LD18" pin="2" pintype="passive"/>
+      <node ref="R3" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="8" pintype="output"/>
+    </net>
+    <net code="29" name="/RPIIN1">
+      <node ref="LD19" pin="2" pintype="passive"/>
+      <node ref="U11" pin="26" pinfunction="GPIO7" pintype="passive"/>
+      <node ref="U8" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="30" name="/RPIIN2">
+      <node ref="LD20" pin="2" pintype="passive"/>
+      <node ref="U11" pin="29" pinfunction="GPIO5" pintype="passive"/>
+      <node ref="U8" pin="4" pintype="output"/>
+    </net>
+    <net code="31" name="/RPIIN3">
+      <node ref="LD21" pin="2" pintype="passive"/>
+      <node ref="U11" pin="31" pinfunction="GPIO6" pintype="passive"/>
+      <node ref="U8" pin="6" pintype="output"/>
+    </net>
+    <net code="32" name="/RPIIN4">
+      <node ref="LD22" pin="2" pintype="passive"/>
+      <node ref="U11" pin="32" pinfunction="GPIO12" pintype="passive"/>
+      <node ref="U8" pin="8" pintype="output"/>
+    </net>
+    <net code="33" name="/RPIIN5">
+      <node ref="LD23" pin="2" pintype="passive"/>
+      <node ref="U11" pin="33" pinfunction="GPIO13" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="2" pintype="output"/>
+    </net>
+    <net code="34" name="/RPIIN6">
+      <node ref="LD24" pin="2" pintype="passive"/>
+      <node ref="U11" pin="35" pinfunction="GPIO19" pintype="passive"/>
+      <node ref="U9" pin="4" pintype="output"/>
+    </net>
+    <net code="35" name="/RPIIN7">
+      <node ref="LD25" pin="2" pintype="passive"/>
+      <node ref="U11" pin="36" pinfunction="GPIO16" pintype="passive"/>
+      <node ref="U9" pin="6" pintype="output"/>
+    </net>
+    <net code="36" name="/RPIIN8">
+      <node ref="LD26" pin="2" pintype="passive"/>
+      <node ref="U11" pin="37" pinfunction="GPIO26" pintype="passive"/>
+      <node ref="U9" pin="8" pintype="output"/>
+    </net>
+    <net code="37" name="/RPIOUT1">
+      <node ref="R15" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="24" pinfunction="GPIO8" pintype="passive"/>
+    </net>
+    <net code="38" name="/RPIOUT2">
+      <node ref="R16" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="23" pinfunction="GPIO11" pintype="passive"/>
+    </net>
+    <net code="39" name="/RPIOUT3">
+      <node ref="R17" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="22" pinfunction="GPIO25" pintype="passive"/>
+    </net>
+    <net code="40" name="/RPIOUT4">
+      <node ref="R18" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="21" pinfunction="GPIO9" pintype="passive"/>
+    </net>
+    <net code="41" name="/RPIOUT5">
+      <node ref="R19" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="19" pinfunction="GPIO10" pintype="passive"/>
+    </net>
+    <net code="42" name="/RPIOUT6">
+      <node ref="R20" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="18" pinfunction="GPIO24" pintype="passive"/>
+    </net>
+    <net code="43" name="/RPIOUT7">
+      <node ref="R21" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="16" pinfunction="GPIO23" pintype="passive"/>
+    </net>
+    <net code="44" name="/RPIOUT8">
+      <node ref="R22" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="15" pinfunction="GPIO22" pintype="passive"/>
+    </net>
+    <net code="45" name="/RPIOUT9">
+      <node ref="R39" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="13" pinfunction="GPIO27" pintype="passive"/>
+    </net>
+    <net code="46" name="/RPIOUT10">
+      <node ref="R40" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="12" pinfunction="GPIO18" pintype="passive"/>
+    </net>
+    <net code="47" name="/RPIOUT11">
+      <node ref="R41" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="11" pinfunction="GPIO17" pintype="passive"/>
+    </net>
+    <net code="48" name="/RPIOUT12">
+      <node ref="R42" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="10" pinfunction="GPIO15" pintype="passive"/>
+    </net>
+    <net code="49" name="/RPIOUT13">
+      <node ref="R43" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="8" pinfunction="GPIO14" pintype="passive"/>
+    </net>
+    <net code="50" name="/RPIOUT14">
+      <node ref="R44" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="7" pinfunction="GPIO4" pintype="passive"/>
+    </net>
+    <net code="51" name="/RPIOUT15">
+      <node ref="R45" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="5" pinfunction="GPIO3" pintype="passive"/>
+    </net>
+    <net code="52" name="/RPIOUT16">
+      <node ref="R46" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U11" pin="3" pinfunction="GPIO2" pintype="passive"/>
+    </net>
+    <net code="53" name="/rpiconnectivity/3V3">
+      <node ref="C18" pin="2" pintype="passive"/>
+      <node ref="C19" pin="2" pintype="passive"/>
+      <node ref="R71" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R72" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R73" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R74" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R75" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R76" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R77" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R78" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U11" pin="1" pinfunction="3V3" pintype="power_out"/>
+      <node ref="U11" pin="17" pinfunction="3V3" pintype="power_out"/>
+      <node ref="U8" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U9" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="54" name="GND">
+      <node ref="C1" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="C19" pin="1" pintype="passive"/>
+      <node ref="J1" pin="3" pintype="passive"/>
+      <node ref="J1" pin="4" pintype="passive"/>
+      <node ref="O1" pin="2" pintype="passive"/>
+      <node ref="O10" pin="2" pintype="passive"/>
+      <node ref="O11" pin="2" pintype="passive"/>
+      <node ref="O12" pin="2" pintype="passive"/>
+      <node ref="O13" pin="2" pintype="passive"/>
+      <node ref="O14" pin="2" pintype="passive"/>
+      <node ref="O15" pin="2" pintype="passive"/>
+      <node ref="O16" pin="2" pintype="passive"/>
+      <node ref="O17" pin="3" pintype="passive"/>
+      <node ref="O18" pin="3" pintype="passive"/>
+      <node ref="O19" pin="3" pintype="passive"/>
+      <node ref="O2" pin="2" pintype="passive"/>
+      <node ref="O20" pin="3" pintype="passive"/>
+      <node ref="O21" pin="3" pintype="passive"/>
+      <node ref="O22" pin="3" pintype="passive"/>
+      <node ref="O23" pin="3" pintype="passive"/>
+      <node ref="O24" pin="3" pintype="passive"/>
+      <node ref="O3" pin="2" pintype="passive"/>
+      <node ref="O4" pin="2" pintype="passive"/>
+      <node ref="O5" pin="2" pintype="passive"/>
+      <node ref="O6" pin="2" pintype="passive"/>
+      <node ref="O7" pin="2" pintype="passive"/>
+      <node ref="O8" pin="2" pintype="passive"/>
+      <node ref="O9" pin="2" pintype="passive"/>
+      <node ref="R1" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R79" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R80" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R81" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R82" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R83" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R84" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R85" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R86" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U11" pin="14" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="20" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="25" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="30" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="34" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="39" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U11" pin="9" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="11" pintype="input"/>
+      <node ref="U8" pin="13" pintype="input"/>
+      <node ref="U8" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U9" pin="11" pintype="input"/>
+      <node ref="U9" pin="13" pintype="input"/>
+      <node ref="U9" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="55" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1" pintype="passive"/>
+      <node ref="R5" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="1" pintype="input"/>
+      <node ref="U3" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="56" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2" pintype="passive"/>
+      <node ref="R3" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R4" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="57" name="Net-(C7-Pad2)">
+      <node ref="C7" pin="2" pintype="passive"/>
+      <node ref="R4" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="58" name="Net-(C9-Pad1)">
+      <node ref="C9" pin="1" pintype="passive"/>
+      <node ref="R7" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="6" pinfunction="-" pintype="input"/>
+      <node ref="U3" pin="7" pintype="output"/>
+    </net>
+    <net code="59" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2" pintype="passive"/>
+      <node ref="R5" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R6" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="60" name="Net-(C10-Pad2)">
+      <node ref="C10" pin="2" pintype="passive"/>
+      <node ref="R6" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="61" name="Net-(C11-Pad1)">
+      <node ref="C11" pin="1" pintype="passive"/>
+      <node ref="R9" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="8" pintype="output"/>
+      <node ref="U3" pin="9" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="62" name="Net-(C11-Pad2)">
+      <node ref="C11" pin="2" pintype="passive"/>
+      <node ref="R7" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R8" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="63" name="Net-(C12-Pad2)">
+      <node ref="C12" pin="2" pintype="passive"/>
+      <node ref="R8" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="10" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="64" name="Net-(C13-Pad2)">
+      <node ref="C13" pin="2" pintype="passive"/>
+      <node ref="R11" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="65" name="Net-(C20-Pad1)">
+      <node ref="C20" pin="1" pintype="passive"/>
+      <node ref="R89" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="1" pintype="input"/>
+      <node ref="U10" pin="2" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="66" name="Net-(C20-Pad2)">
+      <node ref="C20" pin="2" pintype="passive"/>
+      <node ref="R87" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R88" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="67" name="Net-(C21-Pad2)">
+      <node ref="C21" pin="2" pintype="passive"/>
+      <node ref="R88" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U10" pin="3" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="68" name="Net-(C23-Pad1)">
+      <node ref="C23" pin="1" pintype="passive"/>
+      <node ref="R91" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="6" pinfunction="-" pintype="input"/>
+      <node ref="U10" pin="7" pintype="output"/>
+    </net>
+    <net code="69" name="Net-(C23-Pad2)">
+      <node ref="C23" pin="2" pintype="passive"/>
+      <node ref="R89" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R90" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="70" name="Net-(C24-Pad2)">
+      <node ref="C24" pin="2" pintype="passive"/>
+      <node ref="R90" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U10" pin="5" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="71" name="Net-(C25-Pad1)">
+      <node ref="C25" pin="1" pintype="passive"/>
+      <node ref="R93" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="8" pintype="output"/>
+      <node ref="U10" pin="9" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="72" name="Net-(C25-Pad2)">
+      <node ref="C25" pin="2" pintype="passive"/>
+      <node ref="R91" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R92" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="73" name="Net-(C26-Pad2)">
+      <node ref="C26" pin="2" pintype="passive"/>
+      <node ref="R92" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U10" pin="10" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="74" name="Net-(C27-Pad2)">
+      <node ref="C27" pin="2" pintype="passive"/>
+      <node ref="R95" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="75" name="Net-(LD1-Pad1)">
+      <node ref="LD1" pin="1" pintype="passive"/>
+      <node ref="R1" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="76" name="Net-(LD2-Pad1)">
+      <node ref="LD2" pin="1" pintype="passive"/>
+      <node ref="R2" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="77" name="Net-(LD3-Pad1)">
+      <node ref="LD3" pin="1" pintype="passive"/>
+      <node ref="R31" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="78" name="Net-(LD4-Pad1)">
+      <node ref="LD4" pin="1" pintype="passive"/>
+      <node ref="R32" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="79" name="Net-(LD5-Pad1)">
+      <node ref="LD5" pin="1" pintype="passive"/>
+      <node ref="R33" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="80" name="Net-(LD6-Pad1)">
+      <node ref="LD6" pin="1" pintype="passive"/>
+      <node ref="R34" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="81" name="Net-(LD7-Pad1)">
+      <node ref="LD7" pin="1" pintype="passive"/>
+      <node ref="R35" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="82" name="Net-(LD8-Pad1)">
+      <node ref="LD8" pin="1" pintype="passive"/>
+      <node ref="R36" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="83" name="Net-(LD9-Pad1)">
+      <node ref="LD9" pin="1" pintype="passive"/>
+      <node ref="R37" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="84" name="Net-(LD10-Pad1)">
+      <node ref="LD10" pin="1" pintype="passive"/>
+      <node ref="R38" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="85" name="Net-(LD11-Pad1)">
+      <node ref="LD11" pin="1" pintype="passive"/>
+      <node ref="R55" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="86" name="Net-(LD12-Pad1)">
+      <node ref="LD12" pin="1" pintype="passive"/>
+      <node ref="R56" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="87" name="Net-(LD13-Pad1)">
+      <node ref="LD13" pin="1" pintype="passive"/>
+      <node ref="R57" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="88" name="Net-(LD14-Pad1)">
+      <node ref="LD14" pin="1" pintype="passive"/>
+      <node ref="R58" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="89" name="Net-(LD15-Pad1)">
+      <node ref="LD15" pin="1" pintype="passive"/>
+      <node ref="R59" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="90" name="Net-(LD16-Pad1)">
+      <node ref="LD16" pin="1" pintype="passive"/>
+      <node ref="R60" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="91" name="Net-(LD17-Pad1)">
+      <node ref="LD17" pin="1" pintype="passive"/>
+      <node ref="R61" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="92" name="Net-(LD18-Pad1)">
+      <node ref="LD18" pin="1" pintype="passive"/>
+      <node ref="R62" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="93" name="Net-(LD19-Pad1)">
+      <node ref="LD19" pin="1" pintype="passive"/>
+      <node ref="R79" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="94" name="Net-(LD20-Pad1)">
+      <node ref="LD20" pin="1" pintype="passive"/>
+      <node ref="R80" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="95" name="Net-(LD21-Pad1)">
+      <node ref="LD21" pin="1" pintype="passive"/>
+      <node ref="R81" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="96" name="Net-(LD22-Pad1)">
+      <node ref="LD22" pin="1" pintype="passive"/>
+      <node ref="R82" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="97" name="Net-(LD23-Pad1)">
+      <node ref="LD23" pin="1" pintype="passive"/>
+      <node ref="R83" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="98" name="Net-(LD24-Pad1)">
+      <node ref="LD24" pin="1" pintype="passive"/>
+      <node ref="R84" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="99" name="Net-(LD25-Pad1)">
+      <node ref="LD25" pin="1" pintype="passive"/>
+      <node ref="R85" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="100" name="Net-(LD26-Pad1)">
+      <node ref="LD26" pin="1" pintype="passive"/>
+      <node ref="R86" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="101" name="Net-(O1-Pad1)">
+      <node ref="O1" pin="1" pintype="passive"/>
+      <node ref="R15" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="102" name="Net-(O1-Pad4)">
+      <node ref="O1" pin="4" pintype="output"/>
+      <node ref="R23" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="103" name="Net-(O2-Pad1)">
+      <node ref="O2" pin="1" pintype="passive"/>
+      <node ref="R16" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="104" name="Net-(O2-Pad4)">
+      <node ref="O2" pin="4" pintype="output"/>
+      <node ref="R24" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="3" pintype="input"/>
+    </net>
+    <net code="105" name="Net-(O3-Pad1)">
+      <node ref="O3" pin="1" pintype="passive"/>
+      <node ref="R17" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="106" name="Net-(O3-Pad4)">
+      <node ref="O3" pin="4" pintype="output"/>
+      <node ref="R25" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="5" pintype="input"/>
+    </net>
+    <net code="107" name="Net-(O4-Pad1)">
+      <node ref="O4" pin="1" pintype="passive"/>
+      <node ref="R18" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="108" name="Net-(O4-Pad4)">
+      <node ref="O4" pin="4" pintype="output"/>
+      <node ref="R26" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U4" pin="9" pintype="input"/>
+    </net>
+    <net code="109" name="Net-(O5-Pad1)">
+      <node ref="O5" pin="1" pintype="passive"/>
+      <node ref="R19" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="110" name="Net-(O5-Pad4)">
+      <node ref="O5" pin="4" pintype="output"/>
+      <node ref="R27" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="111" name="Net-(O6-Pad1)">
+      <node ref="O6" pin="1" pintype="passive"/>
+      <node ref="R20" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="112" name="Net-(O6-Pad4)">
+      <node ref="O6" pin="4" pintype="output"/>
+      <node ref="R28" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="3" pintype="input"/>
+    </net>
+    <net code="113" name="Net-(O7-Pad1)">
+      <node ref="O7" pin="1" pintype="passive"/>
+      <node ref="R21" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="114" name="Net-(O7-Pad4)">
+      <node ref="O7" pin="4" pintype="output"/>
+      <node ref="R29" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="5" pintype="input"/>
+    </net>
+    <net code="115" name="Net-(O8-Pad1)">
+      <node ref="O8" pin="1" pintype="passive"/>
+      <node ref="R22" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="116" name="Net-(O8-Pad4)">
+      <node ref="O8" pin="4" pintype="output"/>
+      <node ref="R30" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U5" pin="9" pintype="input"/>
+    </net>
+    <net code="117" name="Net-(O9-Pad1)">
+      <node ref="O9" pin="1" pintype="passive"/>
+      <node ref="R39" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="118" name="Net-(O9-Pad4)">
+      <node ref="O9" pin="4" pintype="output"/>
+      <node ref="R47" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="119" name="Net-(O10-Pad1)">
+      <node ref="O10" pin="1" pintype="passive"/>
+      <node ref="R40" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="120" name="Net-(O10-Pad4)">
+      <node ref="O10" pin="4" pintype="output"/>
+      <node ref="R48" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="3" pintype="input"/>
+    </net>
+    <net code="121" name="Net-(O11-Pad1)">
+      <node ref="O11" pin="1" pintype="passive"/>
+      <node ref="R41" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="122" name="Net-(O11-Pad4)">
+      <node ref="O11" pin="4" pintype="output"/>
+      <node ref="R49" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="5" pintype="input"/>
+    </net>
+    <net code="123" name="Net-(O12-Pad1)">
+      <node ref="O12" pin="1" pintype="passive"/>
+      <node ref="R42" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="124" name="Net-(O12-Pad4)">
+      <node ref="O12" pin="4" pintype="output"/>
+      <node ref="R50" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U6" pin="9" pintype="input"/>
+    </net>
+    <net code="125" name="Net-(O13-Pad1)">
+      <node ref="O13" pin="1" pintype="passive"/>
+      <node ref="R43" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="126" name="Net-(O13-Pad4)">
+      <node ref="O13" pin="4" pintype="output"/>
+      <node ref="R51" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="127" name="Net-(O14-Pad1)">
+      <node ref="O14" pin="1" pintype="passive"/>
+      <node ref="R44" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="128" name="Net-(O14-Pad4)">
+      <node ref="O14" pin="4" pintype="output"/>
+      <node ref="R52" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="3" pintype="input"/>
+    </net>
+    <net code="129" name="Net-(O15-Pad1)">
+      <node ref="O15" pin="1" pintype="passive"/>
+      <node ref="R45" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="130" name="Net-(O15-Pad4)">
+      <node ref="O15" pin="4" pintype="output"/>
+      <node ref="R53" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="5" pintype="input"/>
+    </net>
+    <net code="131" name="Net-(O16-Pad1)">
+      <node ref="O16" pin="1" pintype="passive"/>
+      <node ref="R46" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="132" name="Net-(O16-Pad4)">
+      <node ref="O16" pin="4" pintype="output"/>
+      <node ref="R54" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U7" pin="9" pintype="input"/>
+    </net>
+    <net code="133" name="Net-(O17-Pad1)">
+      <node ref="O17" pin="1" pintype="passive"/>
+      <node ref="R63" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="134" name="Net-(O17-Pad4)">
+      <node ref="O17" pin="4" pintype="output"/>
+      <node ref="R71" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="135" name="Net-(O18-Pad1)">
+      <node ref="O18" pin="1" pintype="passive"/>
+      <node ref="R64" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="136" name="Net-(O18-Pad4)">
+      <node ref="O18" pin="4" pintype="output"/>
+      <node ref="R72" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="3" pintype="input"/>
+    </net>
+    <net code="137" name="Net-(O19-Pad1)">
+      <node ref="O19" pin="1" pintype="passive"/>
+      <node ref="R65" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="138" name="Net-(O19-Pad4)">
+      <node ref="O19" pin="4" pintype="output"/>
+      <node ref="R73" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="5" pintype="input"/>
+    </net>
+    <net code="139" name="Net-(O20-Pad1)">
+      <node ref="O20" pin="1" pintype="passive"/>
+      <node ref="R66" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="140" name="Net-(O20-Pad4)">
+      <node ref="O20" pin="4" pintype="output"/>
+      <node ref="R74" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="9" pintype="input"/>
+    </net>
+    <net code="141" name="Net-(O21-Pad1)">
+      <node ref="O21" pin="1" pintype="passive"/>
+      <node ref="R67" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="142" name="Net-(O21-Pad4)">
+      <node ref="O21" pin="4" pintype="output"/>
+      <node ref="R75" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="1" pinfunction="1" pintype="input"/>
+    </net>
+    <net code="143" name="Net-(O22-Pad1)">
+      <node ref="O22" pin="1" pintype="passive"/>
+      <node ref="R68" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="144" name="Net-(O22-Pad4)">
+      <node ref="O22" pin="4" pintype="output"/>
+      <node ref="R76" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="3" pintype="input"/>
+    </net>
+    <net code="145" name="Net-(O23-Pad1)">
+      <node ref="O23" pin="1" pintype="passive"/>
+      <node ref="R69" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="146" name="Net-(O23-Pad4)">
+      <node ref="O23" pin="4" pintype="output"/>
+      <node ref="R77" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="5" pintype="input"/>
+    </net>
+    <net code="147" name="Net-(O24-Pad1)">
+      <node ref="O24" pin="1" pintype="passive"/>
+      <node ref="R70" pin="2" pinfunction="2" pintype="passive"/>
+    </net>
+    <net code="148" name="Net-(O24-Pad4)">
+      <node ref="O24" pin="4" pintype="output"/>
+      <node ref="R78" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U9" pin="9" pintype="input"/>
+    </net>
+    <net code="149" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R11" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R9" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U3" pin="12" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="150" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="13" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="151" name="Net-(R13-Pad2)">
+      <node ref="R13" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R14" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U3" pin="14" pintype="output"/>
+    </net>
+    <net code="152" name="Net-(R93-Pad2)">
+      <node ref="R93" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R94" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R95" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="12" pinfunction="+" pintype="input"/>
+    </net>
+    <net code="153" name="Net-(R96-Pad1)">
+      <node ref="R96" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="R97" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="13" pinfunction="-" pintype="input"/>
+    </net>
+    <net code="154" name="Net-(R97-Pad2)">
+      <node ref="R97" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R98" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U10" pin="14" pintype="output"/>
+    </net>
+    <net code="155" name="VCC">
+      <node ref="C1" pin="2" pintype="passive"/>
+      <node ref="J1" pin="1" pintype="passive"/>
+      <node ref="J1" pin="2" pintype="passive"/>
+      <node ref="LD1" pin="2" pintype="passive"/>
+      <node ref="U11" pin="2" pinfunction="5V" pintype="power_in"/>
+      <node ref="U11" pin="4" pinfunction="5V" pintype="power_in"/>
+    </net>
+    <net code="156" name="VDD">
+      <node ref="C14" pin="2" pintype="passive"/>
+      <node ref="C15" pin="2" pintype="passive"/>
+      <node ref="C16" pin="2" pintype="passive"/>
+      <node ref="C17" pin="2" pintype="passive"/>
+      <node ref="C3" pin="2" pintype="passive"/>
+      <node ref="J10" pin="7" pintype="passive"/>
+      <node ref="J2" pin="1" pintype="passive"/>
+      <node ref="J2" pin="2" pintype="passive"/>
+      <node ref="J3" pin="1" pintype="passive"/>
+      <node ref="J3" pin="2" pintype="passive"/>
+      <node ref="J4" pin="1" pintype="passive"/>
+      <node ref="J4" pin="2" pintype="passive"/>
+      <node ref="R23" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R24" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R25" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R26" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R27" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R28" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R29" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R30" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R47" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R48" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R49" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R50" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R51" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R52" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R53" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R54" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="1" pinfunction="VO" pintype="power_out"/>
+      <node ref="U4" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U5" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U6" pin="14" pinfunction="VCC" pintype="power_in"/>
+      <node ref="U7" pin="14" pinfunction="VCC" pintype="power_in"/>
+    </net>
+    <net code="157" name="VSS">
+      <node ref="C10" pin="1" pintype="passive"/>
+      <node ref="C12" pin="1" pintype="passive"/>
+      <node ref="C13" pin="1" pintype="passive"/>
+      <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="C15" pin="1" pintype="passive"/>
+      <node ref="C16" pin="1" pintype="passive"/>
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C2" pin="1" pintype="passive"/>
+      <node ref="C21" pin="1" pintype="passive"/>
+      <node ref="C22" pin="1" pintype="passive"/>
+      <node ref="C24" pin="1" pintype="passive"/>
+      <node ref="C26" pin="1" pintype="passive"/>
+      <node ref="C27" pin="1" pintype="passive"/>
+      <node ref="C3" pin="1" pintype="passive"/>
+      <node ref="C4" pin="1" pintype="passive"/>
+      <node ref="C5" pin="1" pintype="passive"/>
+      <node ref="C7" pin="1" pintype="passive"/>
+      <node ref="C8" pin="1" pintype="passive"/>
+      <node ref="J10" pin="2" pintype="passive"/>
+      <node ref="J10" pin="4" pintype="passive"/>
+      <node ref="J10" pin="6" pintype="passive"/>
+      <node ref="J10" pin="8" pintype="passive"/>
+      <node ref="J2" pin="11" pintype="input"/>
+      <node ref="J2" pin="12" pintype="input"/>
+      <node ref="J3" pin="11" pintype="input"/>
+      <node ref="J3" pin="12" pintype="input"/>
+      <node ref="J4" pin="11" pintype="input"/>
+      <node ref="J4" pin="12" pintype="input"/>
+      <node ref="J8" pin="3" pintype="passive"/>
+      <node ref="J8" pin="4" pintype="passive"/>
+      <node ref="O1" pin="3" pintype="passive"/>
+      <node ref="O10" pin="3" pintype="passive"/>
+      <node ref="O11" pin="3" pintype="passive"/>
+      <node ref="O12" pin="3" pintype="passive"/>
+      <node ref="O13" pin="3" pintype="passive"/>
+      <node ref="O14" pin="3" pintype="passive"/>
+      <node ref="O15" pin="3" pintype="passive"/>
+      <node ref="O16" pin="3" pintype="passive"/>
+      <node ref="O17" pin="2" pintype="passive"/>
+      <node ref="O18" pin="2" pintype="passive"/>
+      <node ref="O19" pin="2" pintype="passive"/>
+      <node ref="O2" pin="3" pintype="passive"/>
+      <node ref="O20" pin="2" pintype="passive"/>
+      <node ref="O21" pin="2" pintype="passive"/>
+      <node ref="O22" pin="2" pintype="passive"/>
+      <node ref="O23" pin="2" pintype="passive"/>
+      <node ref="O24" pin="2" pintype="passive"/>
+      <node ref="O3" pin="3" pintype="passive"/>
+      <node ref="O4" pin="3" pintype="passive"/>
+      <node ref="O5" pin="3" pintype="passive"/>
+      <node ref="O6" pin="3" pintype="passive"/>
+      <node ref="O7" pin="3" pintype="passive"/>
+      <node ref="O8" pin="3" pintype="passive"/>
+      <node ref="O9" pin="3" pintype="passive"/>
+      <node ref="R10" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R12" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R2" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R31" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R32" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R33" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R34" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R35" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R36" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R37" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R38" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R55" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R56" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R57" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R58" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R59" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R60" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R61" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R62" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R94" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="R96" pin="2" pinfunction="2" pintype="passive"/>
+      <node ref="U1" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U1" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U10" pin="11" pinfunction="VEE" pintype="power_in"/>
+      <node ref="U2" pin="2" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="3" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="6" pinfunction="GND" pintype="power_in"/>
+      <node ref="U2" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U3" pin="11" pinfunction="VEE" pintype="power_in"/>
+      <node ref="U4" pin="11" pintype="input"/>
+      <node ref="U4" pin="13" pintype="input"/>
+      <node ref="U4" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U5" pin="11" pintype="input"/>
+      <node ref="U5" pin="13" pintype="input"/>
+      <node ref="U5" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U6" pin="11" pintype="input"/>
+      <node ref="U6" pin="13" pintype="input"/>
+      <node ref="U6" pin="7" pinfunction="GND" pintype="power_in"/>
+      <node ref="U7" pin="11" pintype="input"/>
+      <node ref="U7" pin="13" pintype="input"/>
+      <node ref="U7" pin="7" pinfunction="GND" pintype="power_in"/>
+    </net>
+    <net code="158" name="unconnected-(F1-Pad1)">
+      <node ref="F1" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="159" name="unconnected-(F2-Pad1)">
+      <node ref="F2" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="160" name="unconnected-(F3-Pad1)">
+      <node ref="F3" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="161" name="unconnected-(F4-Pad1)">
+      <node ref="F4" pin="1" pintype="passive+no_connect"/>
+    </net>
+    <net code="162" name="unconnected-(U1-Pad4)">
+      <node ref="U1" pin="4" pintype="no_connect"/>
+    </net>
+    <net code="163" name="unconnected-(U1-Pad5)">
+      <node ref="U1" pin="5" pintype="no_connect"/>
+    </net>
+    <net code="164" name="unconnected-(U2-Pad4)">
+      <node ref="U2" pin="4" pintype="no_connect"/>
+    </net>
+    <net code="165" name="unconnected-(U2-Pad5)">
+      <node ref="U2" pin="5" pintype="no_connect"/>
+    </net>
+    <net code="166" name="unconnected-(U4-Pad10)">
+      <node ref="U4" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="167" name="unconnected-(U4-Pad12)">
+      <node ref="U4" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="168" name="unconnected-(U5-Pad10)">
+      <node ref="U5" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="169" name="unconnected-(U5-Pad12)">
+      <node ref="U5" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="170" name="unconnected-(U6-Pad10)">
+      <node ref="U6" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="171" name="unconnected-(U6-Pad12)">
+      <node ref="U6" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="172" name="unconnected-(U7-Pad10)">
+      <node ref="U7" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="173" name="unconnected-(U7-Pad12)">
+      <node ref="U7" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="174" name="unconnected-(U8-Pad10)">
+      <node ref="U8" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="175" name="unconnected-(U8-Pad12)">
+      <node ref="U8" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="176" name="unconnected-(U9-Pad10)">
+      <node ref="U9" pin="10" pintype="output+no_connect"/>
+    </net>
+    <net code="177" name="unconnected-(U9-Pad12)">
+      <node ref="U9" pin="12" pintype="output+no_connect"/>
+    </net>
+    <net code="178" name="unconnected-(U11-Pad27)">
+      <node ref="U11" pin="27" pinfunction="ID_SD" pintype="passive"/>
+    </net>
+    <net code="179" name="unconnected-(U11-Pad28)">
+      <node ref="U11" pin="28" pinfunction="ID_SC" pintype="passive"/>
+    </net>
+    <net code="180" name="unconnected-(U11-Pad38)">
+      <node ref="U11" pin="38" pinfunction="GPIO20" pintype="passive"/>
+    </net>
+    <net code="181" name="unconnected-(U11-Pad40)">
+      <node ref="U11" pin="40" pinfunction="GPIO21" pintype="passive"/>
+    </net>
+  </nets>
+</export>
