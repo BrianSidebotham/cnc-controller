@@ -1,0 +1,1 @@
+net spindle-speed-cmd => pyvcp.spindle-speed
