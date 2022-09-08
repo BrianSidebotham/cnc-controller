@@ -93,6 +93,9 @@ addf charge-pump base-thread
 addf hal_pi_gpio.write base-thread
 addf not.0 servo-thread
 addf not.1 servo-thread
+addf abs.0 servo-thread
+addf scale.0 servo-thread
+addf lowpass.0 servo-thread
 addf stepgen.capture-position servo-thread
 addf motion-command-handler servo-thread
 addf motion-controller servo-thread
