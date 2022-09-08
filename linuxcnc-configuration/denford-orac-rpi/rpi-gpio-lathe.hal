@@ -12,6 +12,10 @@ loadrt [KINS]KINEMATICS
 loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
 loadrt not count=4
 
+# scale and lowpass are used in the postUI hal configuration for calculating the spindle speed input
+loadrt scale count=1
+loadrt lowpass count=1
+
 loadrt charge_pump
 net estop-out charge-pump.enable iocontrol.0.user-enable-out
 net charge-pump <= charge-pump.out
