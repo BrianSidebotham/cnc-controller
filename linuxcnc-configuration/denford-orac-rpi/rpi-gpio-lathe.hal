@@ -1,11 +1,11 @@
-# 28aug2018 tjp 20:40
-# tests rpi gpio under linuxcnc, i drive leds and read simple switches for now
+# CNC Controller HAL file to match PCB hardware (16 outputs, 8 inputs)
+# This HAL file is for a Lathe machine and features:
+# - 2 axis stepper control (X and Z axis)
+# - Limit switch support
+# - Spindle 0-10V PWM output
+# - Spindle synch and speed feedback for closed loop control
 #
-# this hacks a .hal  file from Machinekit by Arceye
-# it uses hal_pi_gpio module from KLChin module to drive steppers
-#
-# changes made:   from unipolar motor stepgen to 'normal' step dir type
-#
+# The RPI GPIO driver is used for IO
 
 loadrt [KINS]KINEMATICS
 
@@ -16,67 +16,75 @@ net estop-out charge-pump.enable iocontrol.0.user-enable-out
 net charge-pump <= charge-pump.out
 
 # beware, need new style 'loadrt threads' for lcnc
-# was  newthread fast 100000  
+# was  newthread fast 100000
 # was  newthread slow 1000000 fp
 # this was successful in prelim tests   loadrt threads name1=fast period1=100000 name2=slow period2=1000000
 
-
-# we need a dir mask and an exclude mask
-#
-# ------------------outputs-----------------
-# i use GPIO 2,3 for xstep zstep
-# i use GPIO 12 for spindle motor on
-# i use GPIO 14,15 for xdir zdir
-
-# ------------------inputs-----------------
-# i use GPIO 17 27 for xlim zlim ( used for + and - lims, used for home also )
-
+# Configure all inputs and outputs to match the hardware that we have. The interface PCB has 16 outputs and
+# 8 inputs. The gpio driver is configured with two values that set the direction of a GPIO line and a mask
+# of GPIO lines that are being used.
 # gpio pins ( not rpi pins! )
-# 2 2  2 2 2 2  2 2 1 1  1 1 1 1  1 1 1 1 
-# 7 6  5 4 3 2  1 0 9 8  7 6 5 4  3 2 1 0  9 8 7 6  5 4 3 2  (gpio1& 0 not used )
-#
+# 2 2  2 2 2 2  2 2 1 1  1 1 1 1  1 1 1 1
+# 7 6  5 4 3 2  1 0 9 8  7 6 5 4  3 2 1 0  9 8 7 6  5 4 3 2  (gpio1 & 0 are not used)
+
 # 1 0  1 1 1 1  0 0 0 1  1 0 1 1  0 0 1 1  1 1 0 0  0 1 1 1  dir     mask (0 means in   1 means out)
 # 0 0  0 0 0 0  1 1 0 0  0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0  exclude mask (0 means use  1 means dont use)
-# 0x2f1b3c7 dir =
-# 0x00c0000 msk =
-loadrt hal_pi_gpio dir=49394631 exclude=786432
 
+# 0x2f1b3c7 dir
+# 0x00c0000 msk
+loadrt hal_pi_gpio dir=49394631 exclude=786432
 
 # beware gpio 21 and 22 are still reversed, they control rpins 15&50 and are backwards almost everywhere in rpi docs
 # easy to see and check with 'show pins hal_pi_gpio*
 
+# The hardware from the PCB is configured as follows:
 
-# tjp  chg to 3 step dir types,plan on using gekco G540
-# was  loadrt stepgen step_type=5 ctrl_type=v 
-# make posn loop type 
+# GPIO | Pn | PCB SIG | CUSTOM_FUNCTION
+#
+#   0  | 27 | Unused  |
+#   1  | 28 | Unused  |
+#   2  |  3 | OUT16   |
+#   3  |  5 | OUT15   | Spindle PWM
+#   4  |  7 | OUT14   |
+#   5  | 29 | IN2     |
+#   6  | 31 | IN3     | LIMIT
+#   7  | 26 | IN1     | SPINDLE INDEX
+#   8  | 24 | OUT1    | X Enable
+#   9  | 21 | OUT4    | Z Enable
+
+#  10  | 19 | OUT5    | Z DIR
+#  11  | 23 | OUT2    | X DIR
+#  12  | 32 | IN4     |
+#  13  | 33 | IN5     |
+#  14  |  8 | OUT13   |
+#  15  | 10 | OUT12   |
+#  16  | 36 | IN7     |
+#  17  | 11 | OUT11   |
+#  18  | 12 | OUT10   |
+#  19  | 35 | IN6     |
+
+#  20  | 38 | Unused  |
+#  21  | 40 | Unused  |
+#  22  | 15 | OUT8    |
+#  23  | 16 | OUT7    |
+#  24  | 18 | OUT6    | Z STEP
+#  25  | 22 | OUT3    | X STEP
+#  26  | 37 | IN8     |
+#  27  | 13 | OUT9    |
+
+
+
 loadrt stepgen step_type=0,0,0
-
-
-# use velocity style stepgen with leds for motors at first
-#  should be posn loop!  net speed stepgen.0.velocity-cmd
-
 
 # DEBOUNCE Probe und Limits
 loadrt debounce cfg=4
 setp debounce.0.delay 10
 addf debounce.0 base-thread
 
-# Probe == Öffner
-#net probe hal_pi_gpio.pin-18-in => motion.probe-input
-
-# PROBE = Schließer
-#loadrt not
-#addf not.0 servo-thread
-#net not-1-in  not.0.in  <= hal_pi_gpio.pin-18-in
-#net not-1-out not.0.out => debounce.0.3.in
-#net probe debounce.0.3.out => motion.probe-input
-
-
 # --- begin addf s
 addf hal_pi_gpio.read  base-thread
 addf stepgen.make-pulses base-thread
 addf charge-pump base-thread
-# dang it!  i forgot to add the read funct AGAIN
 addf hal_pi_gpio.write base-thread
 addf stepgen.capture-position servo-thread
 addf motion-command-handler servo-thread
@@ -89,24 +97,25 @@ addf pwmgen.update servo-thread
 addf pwmgen.make-pulses base-thread
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
 net spindle-on spindle.0.on => pwmgen.0.enable
-net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-19-out
+net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
+
 # Set the spindle's top speed in RPM
 setp pwmgen.0.scale 1800
+
+# Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq 10
 
-#net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
+# Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
+# net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
 
-# i use GPIO 2,3 for xstep zstep
-#net xenable => hal_pi_gpio.pin-29-out
-net xstep stepgen.0.step => hal_pi_gpio.pin-03-out
-net zstep stepgen.1.step => hal_pi_gpio.pin-13-out
+# Stepper signal setup
+net xenable => hal_pi_gpio.pin-24-out
+net xdir  stepgen.0.dir  => hal_pi_gpio.pin-23-out
+net xstep stepgen.0.step => hal_pi_gpio.pin-22-out
 
-# i use GPIO 14,15 for xdir zdir
-net xdir  stepgen.0.dir  => hal_pi_gpio.pin-05-out
-net zdir  stepgen.1.dir  => hal_pi_gpio.pin-15-out
-
-
-#net charge-pump => pick a gpio if used, but i dont use charge-pump for now
+net zenable => hal_pi_gpio.pin-21-out
+net zstep stepgen.1.step => hal_pi_gpio.pin-18-out
+net zdir  stepgen.1.dir  => hal_pi_gpio.pin-19-out
 
 # i use GPIO 17 27 22 for xlim ylim zlim , thats rpins  11,13,15 resp
 # ( one signal used 3 ways, used for + and - lims, used for home also )
