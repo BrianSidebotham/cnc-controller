@@ -104,6 +104,12 @@ loadrt pwmgen output_type=0
 addf pwmgen.update servo-thread
 addf pwmgen.make-pulses base-thread
 
+# Set the spindle's top speed in RPM
+setp pwmgen.0.scale 1800
+
+# Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
+setp pwmgen.0.pwm-freq 10
+
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
 net spindle-on spindle.0.on => pwmgen.0.enable
 net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
@@ -124,11 +130,21 @@ net spindle-phase-a encoder.0.phase-A <= hal_pi_gpio.pin-29-in
 net spindle-phase-b encoder.0.phase-B
 net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
 
-# Set the spindle's top speed in RPM
-setp pwmgen.0.scale 1800
+# load a near component and attach it to a thread
+loadrt near
+addf near.0 servo-thread
 
-# Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
-setp pwmgen.0.pwm-freq 10
+# connect one input to the commanded spindle speed
+net spindle-cmd => near.0.in1
+
+# connect one input to the encoder-measured spindle speed
+net spindle-velocity => near.0.in2
+
+# connect the output to the spindle-at-speed input
+net spindle-at-speed spindle.0.at-speed <= near.0.out
+
+# set the spindle speed inputs to agree if within 1%
+setp near.0.scale 1.01
 
 # Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
 # net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
