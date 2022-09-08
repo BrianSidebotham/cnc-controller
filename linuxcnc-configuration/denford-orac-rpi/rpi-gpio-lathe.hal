@@ -121,14 +121,12 @@ net zdir  stepgen.1.dir  => hal_pi_gpio.pin-19-out
 # i use GPIO 17 27 22 for xlim ylim zlim , thats rpins  11,13,15 resp
 # ( one signal used 3 ways, used for + and - lims, used for home also )
 # now add limits and homing for x
-net limit-x-switch hal_pi_gpio.pin-31-in => debounce.0.0.in
-net limitxinv debounce.0.0.out => not.1.in
+net limit-switch hal_pi_gpio.pin-31-in => debounce.0.0.in
+net limitinv debounce.0.0.out => not.1.in
 net xlim not.0.out => joint.0.neg-lim-sw-in joint.0.pos-lim-sw-in joint.0.home-sw-in
 
 # now add limits and homing for z
-net limit-z-switch hal_pi_gpio.pin-31-in => debounce.0.1.in
-net limitzinv debounce.0.1.out => not.1.in
-net zlim not.1.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
+net zlim not.0.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
 
 setp stepgen.0.position-scale [JOINT_0]SCALE
 setp stepgen.0.steplen 4000
