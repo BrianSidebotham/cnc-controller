@@ -10,7 +10,7 @@
 loadrt [KINS]KINEMATICS
 
 loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
-loadrt not count=5
+loadrt not count=4
 
 loadrt charge_pump
 net estop-out charge-pump.enable iocontrol.0.user-enable-out
@@ -51,9 +51,9 @@ loadrt hal_pi_gpio dir=49394631 exclude=786432
 #   6  | 31 | IN3     | LIMIT
 #   7  | 26 | IN1     | SPINDLE INDEX
 #   8  | 24 | OUT1    | X Enable
-#   9  | 21 | OUT4    | Z Enable
+#   9  | 21 | OUT4    | 
 
-#  10  | 19 | OUT5    | Z DIR
+#  10  | 19 | OUT5    | Z Enable
 #  11  | 23 | OUT2    | X DIR
 #  12  | 32 | IN4     |
 #  13  | 33 | IN5     |
@@ -67,8 +67,8 @@ loadrt hal_pi_gpio dir=49394631 exclude=786432
 #  20  | 38 | Unused  |
 #  21  | 40 | Unused  |
 #  22  | 15 | OUT8    |
-#  23  | 16 | OUT7    |
-#  24  | 18 | OUT6    | Z STEP
+#  23  | 16 | OUT7    | Z STEP
+#  24  | 18 | OUT6    | Z DIR
 #  25  | 22 | OUT3    | X STEP
 #  26  | 37 | IN8     |
 #  27  | 13 | OUT9    |
@@ -87,10 +87,13 @@ addf hal_pi_gpio.read  base-thread
 addf stepgen.make-pulses base-thread
 addf charge-pump base-thread
 addf hal_pi_gpio.write base-thread
+addf not.0 servo-thread
+addf not.1 servo-thread
 addf stepgen.capture-position servo-thread
 addf motion-command-handler servo-thread
 addf motion-controller servo-thread
 addf stepgen.update-freq servo-thread
+
 # --- end addf s
 
 loadrt pwmgen output_type=0
@@ -110,13 +113,15 @@ setp pwmgen.0.pwm-freq 10
 # net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
 
 # Stepper signal setup
-net xenable => hal_pi_gpio.pin-24-out
+net xenable => not.0.in
+net notxenable not.0.out => hal_pi_gpio.pin-24-out
 net xdir  stepgen.0.dir  => hal_pi_gpio.pin-23-out
 net xstep stepgen.0.step => hal_pi_gpio.pin-22-out
 
-net zenable => hal_pi_gpio.pin-21-out
-net zstep stepgen.1.step => hal_pi_gpio.pin-18-out
-net zdir  stepgen.1.dir  => hal_pi_gpio.pin-19-out
+net zenable => not.1.in
+net notzenable not.1.out => hal_pi_gpio.pin-19-out
+net zstep stepgen.1.step => hal_pi_gpio.pin-16-out
+net zdir  stepgen.1.dir  => hal_pi_gpio.pin-18-out
 
 # i use GPIO 17 27 22 for xlim ylim zlim , thats rpins  11,13,15 resp
 # ( one signal used 3 ways, used for + and - lims, used for home also )
