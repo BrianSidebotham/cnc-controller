@@ -1,1 +1,7 @@
-net spindle-velocity => pyvcp.spindle-velocity
+
+setp scale.0.gain 60
+setp lowpass.0.gain 0.010000
+net spindle-velocity => lowpass.0.in
+net spindle-fb-filtered-rps lowpass.0.out => abs.0.in
+net spindle-fb-filtered-abs-rps abs.0.out => scale.0.in
+net spindle-fb-filtered-abs-rpm scale.0.out => pyvcp.spindle-speed
