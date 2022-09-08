@@ -126,7 +126,7 @@ net xlim debounce.0.0.out => joint.0.neg-lim-sw-in joint.0.pos-lim-sw-in joint.0
 
 # now add limits and homing for z
 net zlimit-switch hal_pi_gpio.pin-33-in => debounce.0.1.in
-net zlim debounce.0.1.in => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
+net zlim debounce.0.1.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
 
 setp stepgen.0.position-scale [JOINT_0]SCALE
 setp stepgen.0.steplen 4000
