@@ -47,11 +47,11 @@ loadrt hal_pi_gpio dir=49394631 exclude=786432
 #   2  |  3 | OUT16   |
 #   3  |  5 | OUT15   | Spindle PWM
 #   4  |  7 | OUT14   |
-#   5  | 29 | IN2     |
+#   5  | 29 | IN2     | SPINDLE POSITION
 #   6  | 31 | IN3     | LIMIT
 #   7  | 26 | IN1     | SPINDLE INDEX
 #   8  | 24 | OUT1    | X Enable
-#   9  | 21 | OUT4    | 
+#   9  | 21 | OUT4    |
 
 #  10  | 19 | OUT5    | Z Enable
 #  11  | 23 | OUT2    | X DIR
@@ -82,7 +82,6 @@ loadrt debounce cfg=4
 setp debounce.0.delay 10
 addf debounce.0 base-thread
 
-# --- begin addf s
 addf hal_pi_gpio.read  base-thread
 addf stepgen.make-pulses base-thread
 addf charge-pump base-thread
@@ -94,14 +93,36 @@ addf motion-command-handler servo-thread
 addf motion-controller servo-thread
 addf stepgen.update-freq servo-thread
 
-# --- end addf s
+# In order to have spindle feedback we need to use the encoder functions
+# See the Spindle Feedback section of the docs: https://linuxcnc.org/docs/html/examples/spindle.html
+
+loadrt encoder num_chan=1
+addf encoder.update-counters base-thread
+addf encoder.capture-position servo-thread
 
 loadrt pwmgen output_type=0
 addf pwmgen.update servo-thread
 addf pwmgen.make-pulses base-thread
+
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
 net spindle-on spindle.0.on => pwmgen.0.enable
 net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
+
+# The standard Denford Orac position disc has 48 pulses per revolution
+setp encoder.0.position-scale 48
+
+# This is not a quadrature encoder (with A and B signals) so we use just a simple counter mode
+setp encoder.0.counter-mode true
+
+# Connect the HAL encoder outputs to LinuxCNC
+net spindle-position encoder.0.position => spindle.0.revs
+net spindle-velocity encoder.0.velocity => spindle.0.speed-in
+net spindle-index-enable encoder.0.index-enable => spindle.0.index-enable
+
+# Hook the spindle encoder HAL to the physical pins
+net spindle-phase-a encoder.0.phase-A <= hal_pi_gpio.pin-29-in
+net spindle-phase-b encoder.0.phase-B
+net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
 
 # Set the spindle's top speed in RPM
 setp pwmgen.0.scale 1800
