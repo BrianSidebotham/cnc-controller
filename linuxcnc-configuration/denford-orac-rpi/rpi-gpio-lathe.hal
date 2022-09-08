@@ -35,11 +35,11 @@ net charge-pump <= charge-pump.out
 # 2 2  2 2 2 2  2 2 1 1  1 1 1 1  1 1 1 1 
 # 7 6  5 4 3 2  1 0 9 8  7 6 5 4  3 2 1 0  9 8 7 6  5 4 3 2  (gpio1& 0 not used )
 #
-# 1 0  0 0 0 1  0 0 0 0  1 0 0 0  0 0 0 1  0 0 0 0  0 1 1 1  dir     mask (0 means in   1 means out)
-# 0 1  1 1 1 0  1 1 1 1  0 1 1 1  0 1 0 0  0 1 1 0  0 0 0 0  exclude mask (0 means use  1 means dont use)
-# 0x2108107 dir = 
-# 0x1ef7460 msk = 
-loadrt hal_pi_gpio dir=34636039 exclude=32470112
+# 1 0  1 1 1 1  0 0 0 1  1 0 1 1  0 0 1 1  1 1 0 0  0 1 1 1  dir     mask (0 means in   1 means out)
+# 0 0  0 0 0 0  1 1 0 0  0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0  exclude mask (0 means use  1 means dont use)
+# 0x2f1b3c7 dir =
+# 0x00c0000 msk =
+loadrt hal_pi_gpio dir=49394631 exclude=786432
 
 
 # beware gpio 21 and 22 are still reversed, they control rpins 15&50 and are backwards almost everywhere in rpi docs
