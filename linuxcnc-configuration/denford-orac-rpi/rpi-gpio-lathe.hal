@@ -179,9 +179,9 @@ net zlimit-switch hal_pi_gpio.pin-33-in => debounce.0.1.in
 net zlim debounce.0.1.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
 
 setp stepgen.0.position-scale [JOINT_0]SCALE
-setp stepgen.0.steplen 4000
-setp stepgen.0.stepspace 500
-setp stepgen.0.dirhold 20000
+setp stepgen.0.steplen 1000
+setp stepgen.0.stepspace 1000
+setp stepgen.0.dirhold 10000
 setp stepgen.0.dirsetup 1000
 setp stepgen.0.maxaccel [JOINT_0]STEPGEN_MAXACCEL
 net xpos-cmd joint.0.motor-pos-cmd => stepgen.0.position-cmd
@@ -191,9 +191,9 @@ net xdir <= stepgen.0.dir
 net xenable joint.0.amp-enable-out => stepgen.0.enable
 
 setp stepgen.1.position-scale [JOINT_1]SCALE
-setp stepgen.1.steplen 4000
-setp stepgen.1.stepspace 500
-setp stepgen.1.dirhold 20000
+setp stepgen.1.steplen 1000
+setp stepgen.1.stepspace 1000
+setp stepgen.1.dirhold 10000
 setp stepgen.1.dirsetup 1000
 setp stepgen.1.maxaccel [JOINT_1]STEPGEN_MAXACCEL
 net zpos-cmd joint.1.motor-pos-cmd => stepgen.1.position-cmd
