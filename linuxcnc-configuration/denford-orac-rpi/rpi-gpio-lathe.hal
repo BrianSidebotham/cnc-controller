@@ -21,11 +21,6 @@ loadrt charge_pump
 net estop-out charge-pump.enable iocontrol.0.user-enable-out
 net charge-pump <= charge-pump.out
 
-# beware, need new style 'loadrt threads' for lcnc
-# was  newthread fast 100000
-# was  newthread slow 1000000 fp
-# this was successful in prelim tests   loadrt threads name1=fast period1=100000 name2=slow period2=1000000
-
 # Configure all inputs and outputs to match the hardware that we have. The interface PCB has 16 outputs and
 # 8 inputs. The gpio driver is configured with two values that set the direction of a GPIO line and a mask
 # of GPIO lines that are being used.
@@ -77,8 +72,6 @@ loadrt hal_pi_gpio dir=49394631 exclude=786432
 #  25  | 22 | OUT3    | X STEP
 #  26  | 37 | IN8     |
 #  27  | 13 | OUT9    |
-
-
 
 loadrt stepgen step_type=0,0,0
 
@@ -137,6 +130,11 @@ net spindle-index-enable encoder.0.index-enable => spindle.0.index-enable
 net spindle-phase-a encoder.0.phase-A <= hal_pi_gpio.pin-29-in
 net spindle-phase-b encoder.0.phase-B
 net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
+
+# Convert revolutions per second (RPS) to revolutions per minute (RPM)
+setp scale.0.gain 60
+net spindle-velocity => scale.0.in
+net spindle-velocity-rpm <= scale.0.out
 
 # load a near component and attach it to a thread
 loadrt near
@@ -210,4 +208,3 @@ net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
 net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
 net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
 net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
-

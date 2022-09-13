@@ -1,7 +1,9 @@
 
-setp scale.0.gain 60
-setp lowpass.0.gain 0.010000
-net spindle-velocity => lowpass.0.in
-net spindle-fb-filtered-rps lowpass.0.out => abs.0.in
-net spindle-fb-filtered-abs-rps abs.0.out => scale.0.in
-net spindle-fb-filtered-abs-rpm scale.0.out => pyvcp.spindle-speed
+# Attach the spindle RPM to the UI component
+net spindle-velocity-rpm => pyvcp.spindle-speed
+
+# Optionaly use the following block to filter the spindle RPM display
+# setp lowpass.0.gain 0.010000
+# net spindle-velocity-rpm => lowpass.0.in
+# net spindle-fb-filtered-rps lowpass.0.out => abs.0.in
+# net spindle-fb-filtered-abs-rps abs.0.out => pyvcp.spindle-speed
