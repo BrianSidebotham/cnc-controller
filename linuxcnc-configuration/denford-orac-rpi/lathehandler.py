@@ -20,6 +20,9 @@
 #    along with this program; if not, write to the Free Software
 #    Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA''''''
 
+logging.basicConfig("/home/pi/lathehandler.py")
+logging.info("Starting up")
+
 import os,sys
 from gladevcp.persistence import IniFile,widget_defaults,set_debug,select_widgets
 import hal
@@ -43,8 +46,6 @@ notouch = 0
 norun = 0
 import logging
 
-logging.basicConfig("/home/pi/lathehandler.py")
-logging.info("Starting up")
 class HandlerClass:
     active = False
     tab_num = 0
