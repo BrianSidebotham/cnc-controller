@@ -108,9 +108,10 @@ addf pwmgen.make-pulses base-thread
 
 loadrt pid num_chan=1
 addf pid.0.do-pid-calcs servo-thread
-setp pid.0.Pgain 1
-setp pid.0.Igain 1
-setp pid.0.Dgain 1
+setp pid.0.FF0 = 1.0
+setp pid.0.Pgain 0
+setp pid.0.Igain 0
+setp pid.0.Dgain 0
 setp pid.0.maxoutput 2000
 
 # Set the spindle's top speed in RPM
