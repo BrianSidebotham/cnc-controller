@@ -144,10 +144,10 @@ setp scale.0.gain 60
 net spindle-velocity => scale.0.in
 net spindle-velocity-rpm <= scale.0.out
 
-net pid_feedback               pid.0.feedback   spindle.0.speed-in    scale.0.out
+net spindle-velocity-rpm       pid.0.feedback   spindle.0.speed-in    scale.0.out
 net pid_command                pid.0.command    spindle.0.speed-out   sum2.0.in0
 net pid_output                 pid.0.output     sum2.0.in1
-net pwmgen.0.value             sum2.0.out
+net pid_value                  pwmgen.0.value   sum2.0.out
 
 # load a near component and attach it to a thread
 loadrt near
