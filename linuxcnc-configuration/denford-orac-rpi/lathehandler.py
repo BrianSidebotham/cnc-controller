@@ -2,7 +2,7 @@
 # vim: sts=4 sw=4 et
 #    This is a component of EMC
 #    savestate.py copyright 2013 Andy Pugh
-#    based on code from 
+#    based on code from
 #    probe.py Copyright 2010 Michael Haberler
 #
 #
@@ -41,12 +41,16 @@ from gi.repository import GdkPixbuf
 debug = 0
 notouch = 0
 norun = 0
+import logging
 
+logging.basicConfig("/home/pi/lathehandler.py")
+logging.info("Starting up")
 class HandlerClass:
     active = False
     tab_num = 0
 
     def on_expose(self,nb,data=None):
+        logging.info("on_expose")
         tab_num = nb.get_current_page()
         tab = nb.get_nth_page(tab_num)
         alloc = tab.get_allocation()
@@ -61,11 +65,12 @@ class HandlerClass:
                     x1 = int(m[0][0]); y1 = int(m[0][1])
                     c.set_margin_left(max(0, w * x1/1500))
                     c.set_margin_top(max(0, h * y1/1000))
-                
+
 
     # decide if our window is active to mask the cycle-start hardware button
-    # FIXME: This is probably not as reliable as one might wish. 
+    # FIXME: This is probably not as reliable as one might wish.
     def event(self,w,event):
+        logging.info("event")
         if w.is_active():
             if w.has_toplevel_focus() :
                 self.active = True
@@ -74,10 +79,12 @@ class HandlerClass:
 
     # Capture notify events
     def on_map_event(self, widget, data=None):
+        logging.info("on_map_event")
         top = widget.get_toplevel()
         top.connect('notify', self.event)
 
     def on_destroy(self,obj,data=None):
+        logging.info("on_destroy")
         self.ini.save_state(self)
 
     def on_restore_defaults(self,button,data=None):
@@ -85,10 +92,12 @@ class HandlerClass:
         example callback for 'Reset to defaults' button
         currently unused
         '''
+        logging.info("on_restore_defaults")
         self.ini.create_default_ini()
         self.ini.restore_state(self)
 
     def __init__(self, halcomp,builder,useropts):
+        logging.info("__init__")
         self.halcomp = halcomp
         self.builder = builder
         self.ini_filename = 'savestate.sav'
@@ -103,11 +112,11 @@ class HandlerClass:
         self.cycle_start = hal_glib.GPin(halcomp.newpin('cycle-start', hal.HAL_BIT, hal.HAL_IN))
         self.cycle_start.connect('value-changed', self.cycle_pin)
 
-        # This catches the signal from Touchy to say that the tab is exposed 
+        # This catches the signal from Touchy to say that the tab is exposed
         t = self.builder.get_object('macrobox')
         t.connect('map-event',self.on_map_event)
         t.add_events(Gdk.EventMask.STRUCTURE_MASK)
-        
+
         self.cmd = linuxcnc.command()
 
         # This connects the expose event to re-draw and scale the SVG frames
@@ -117,7 +126,7 @@ class HandlerClass:
         t.add_events(Gdk.EventMask.STRUCTURE_MASK)
         self.svg = Rsvg.Handle().new_from_file('LatheMacro.svg')
         self.active = True
-        
+
         # handle Useropts
         if norun:
             for c in range(0,6):
@@ -126,6 +135,7 @@ class HandlerClass:
                 self.builder.get_object(f'tab{c}.action').set_visible(False)
 
     def show_keyb(self, obj, data=None):
+        logging.info("show_keyb")
         if notouch: return False
         self.active_ctrl = obj
         self.keyb = self.builder.get_object('keyboard')
@@ -136,9 +146,11 @@ class HandlerClass:
         return True
 
     def keyb_prev_click(self, obj, data=None):
+        logging.info("keyb_prev_click")
         self.entry.set_text(self.active_ctrl.get_text())
 
     def keyb_number_click(self, obj, data=None):
+        logging.info("keyb_number_click")
         data = self.entry.get_text()
         data = data + obj.get_label()
         if any( x in data for x in [ '/2', '/4', '/8', '/16', '/32', '/64', '/128']):
@@ -147,14 +159,16 @@ class HandlerClass:
         self.entry.set_text(data)
 
     def keyb_pm_click(self, obj, data=None):
+        logging.info("keyb_pm_click")
         data = self.entry.get_text()
         if data[0] == '-':
             data = data[1:]
         else:
             data = '-' + data
-        self.entry.set_text(data) 
+        self.entry.set_text(data)
 
     def keyb_convert_click(self, obj, data=None):
+        logging.info("keyb_convert_click")
         v = float(self.entry.get_text())
         op = obj.get_label()
         if op == 'in->mm':
@@ -167,26 +181,32 @@ class HandlerClass:
             self.entry.set_text(f'{25.4 / v:6.4}')
 
     def keyb_del_click(self, obj, data=None):
+        logging.info("keyb_del_click")
         data = self.entry.get_text()
         data = data[:-1]
         self.entry.set_text(data)
 
     def keyb_clear_click(self, obj, data=None):
+        logging.info("keyb_clear_click")
         self.entry.set_text('')
 
     def keyb_cancel_click(self, obj, data=None):
+        logging.info("keyb_cancel_click")
         self.keyb.hide()
 
     def keyb_ok_click(self, obj, data=None):
+        logging.info("keyb_ok_click")
         if self.entry.get_text() != '':
             self.active_ctrl.set_value(float(self.entry.get_text()))
         self.keyb.hide()
 
     def set_alpha(self, obj, data = None):
+        logging.info("set_alpha")
         cr = obj.get_property('window').cairo_create()
         cr.set_source_rgba(1.0, 1.0, 1.0, 0.0)
 
     def cycle_pin(self, pin, data = None):
+        logging.info("cycle_pin")
         if pin.get() == 0:
             return
         if self.active:
@@ -201,10 +221,12 @@ class HandlerClass:
                 print(c.get_name(), "clicked")
 
     def testing(self, obj, data = None):
+        logging.info("testing")
         print('event', data)
 
-def get_handlers(halcomp,builder,useropts):
 
+def get_handlers(halcomp,builder,useropts):
+    logging.info("get_handlers")
     global debug
     for cmd in useropts:
         print(cmd)
