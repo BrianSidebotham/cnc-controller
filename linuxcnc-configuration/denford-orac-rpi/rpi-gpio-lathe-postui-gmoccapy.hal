@@ -1,0 +1,3 @@
+
+net spindle-at-speed      gmoccapy.spindle_at_speed_led
+net spindle-velocity-rpm  gmoccapy.spindle_feedback_bar
