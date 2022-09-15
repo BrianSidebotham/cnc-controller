@@ -106,7 +106,7 @@ addf pwmgen.update servo-thread
 addf pwmgen.make-pulses base-thread
 
 # Set the spindle's top speed in RPM
-setp pwmgen.0.scale 1800
+setp pwmgen.0.scale 2000
 
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq 10
