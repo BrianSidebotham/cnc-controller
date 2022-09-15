@@ -16,6 +16,7 @@ loadrt not count=4
 loadrt scale count=1
 loadrt lowpass count=1
 loadrt abs count=1
+loadrt sum2 count=1
 
 loadrt charge_pump
 net estop-out charge-pump.enable iocontrol.0.user-enable-out
@@ -105,15 +106,22 @@ loadrt pwmgen output_type=0
 addf pwmgen.update servo-thread
 addf pwmgen.make-pulses base-thread
 
+loadrt pid num_chan=1
+addf pid.0.do-pid-calcs servo-thread
+setp pid.0.Pgain 0
+setp pid.0.Igain 1
+setp pid.0.Dgain 1
+setp pid.0.maxoutput 2000
+
 # Set the spindle's top speed in RPM
 setp pwmgen.0.scale 2000
 
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq 10
 
-net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
-net spindle-on spindle.0.on => pwmgen.0.enable
-net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
+#net spindle-speed-cmd spindle.0.speed-out pwmgen.0.value
+net spindle-on spindle.0.on    pwmgen.0.enable pid.0.enable
+net spindle-pwm pwmgen.0.pwm   hal_pi_gpio.pin-05-out
 
 # The standard Denford Orac position disc has 48 pulses per revolution
 setp encoder.0.position-scale 48
@@ -123,7 +131,7 @@ setp encoder.0.counter-mode true
 
 # Connect the HAL encoder outputs to LinuxCNC
 net spindle-position encoder.0.position => spindle.0.revs
-net spindle-velocity encoder.0.velocity => spindle.0.speed-in
+net spindle-velocity encoder.0.velocity => scale.0.in
 net spindle-index-enable encoder.0.index-enable => spindle.0.index-enable
 
 # Hook the spindle encoder HAL to the physical pins
@@ -135,6 +143,11 @@ net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
 setp scale.0.gain 60
 net spindle-velocity => scale.0.in
 net spindle-velocity-rpm <= scale.0.out
+
+net pid_feedback               pid.0.feedback   spindle.0.speed-in    scale.0.out
+net pid_command                pid.0.command    spindle.0.speed-out   sum2.0.in0
+net pid_output                 pid.0.output     sum2.0.in1
+net pwmgen.0.value             sum2.0.out
 
 # load a near component and attach it to a thread
 loadrt near
