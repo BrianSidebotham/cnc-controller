@@ -116,6 +116,9 @@ setp pid.0.maxoutput 2000
 # Set the spindle's top speed in RPM
 setp pwmgen.0.scale 2000
 
+# Convert revolutions per second (RPS) to revolutions per minute (RPM) for the output
+setp scale.0.gain 60
+
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq 10
 
@@ -140,16 +143,12 @@ net spindle-phase-a            encoder.0.phase-A         hal_pi_gpio.pin-29-in
 net spindle-phase-b            encoder.0.phase-B
 net spindle-index              encoder.0.phase-Z         hal_pi_gpio.pin-26-in
 
-net pid_feedback               pid.0.feedback            spindle.0.speed-in    scale.0.out
+net spindle-velocity-rpm       pid.0.feedback            spindle.0.speed-in    scale.0.out
 net pid_command                pid.0.command             spindle.0.speed-out   sum2.0.in0
 net pid_output                 pid.0.output              sum2.0.in1
 
 net pwmgen_value               pwmgen.0.value            sum2.0.out
 net pwmgen_pwm                 pwmgen.0.pwm              hal_pi_gpio.pin-05-out
-
-# Convert revolutions per second (RPS) to revolutions per minute (RPM) for the output
-setp scale.0.gain 60
-net spindle-velocity-rpm       scale.0.out
 
 # load a near component and attach it to a thread
 loadrt near
