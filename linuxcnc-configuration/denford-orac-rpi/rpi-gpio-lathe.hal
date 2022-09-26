@@ -126,7 +126,7 @@ setp pwmgen.0.pwm-freq 10
 # TODO: See what this setting actually does
 setp pwmgen.0.dither-pwm true
 
-net spindle-on                 spindle.0.on              pwmgen.0.enable      pid.0.enable
+net spindle-enable             spindle.0.on              pwmgen.0.enable      pid.0.enable
 
 # The standard Denford Orac position disc has 48 pulses per revolution
 setp encoder.0.position-scale 48
