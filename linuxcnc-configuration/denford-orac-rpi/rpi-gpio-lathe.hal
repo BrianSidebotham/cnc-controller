@@ -94,7 +94,7 @@ addf stepgen.capture-position servo-thread
 addf motion-command-handler servo-thread
 addf motion-controller servo-thread
 addf stepgen.update-freq servo-thread
-addf sum2 servo-thread
+addf sum2.0 servo-thread
 
 # In order to have spindle feedback we need to use the encoder functions
 # See the Spindle Feedback section of the docs: https://linuxcnc.org/docs/html/examples/spindle.html
