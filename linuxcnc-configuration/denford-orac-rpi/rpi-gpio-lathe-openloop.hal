@@ -1,0 +1,211 @@
+# CNC Controller HAL file to match PCB hardware (16 outputs, 8 inputs)
+# This HAL file is for a Lathe machine and features:
+# - 2 axis stepper control (X and Z axis)
+# - Limit switch support
+# - Spindle 0-10V PWM output
+# - Spindle synch and speed feedback for closed loop control
+#
+# The RPI GPIO driver is used for IO
+
+loadrt [KINS]KINEMATICS
+
+loadrt [EMCMOT]EMCMOT base_period_nsec=[EMCMOT]BASE_PERIOD servo_period_nsec=[EMCMOT]SERVO_PERIOD num_joints=[KINS]JOINTS
+loadrt not count=4
+
+# scale and lowpass are used in the postUI hal configuration for calculating the spindle speed input
+loadrt scale count=1
+loadrt lowpass count=1
+loadrt abs count=1
+
+loadrt charge_pump
+net estop-out charge-pump.enable iocontrol.0.user-enable-out
+net charge-pump <= charge-pump.out
+
+# Configure all inputs and outputs to match the hardware that we have. The interface PCB has 16 outputs and
+# 8 inputs. The gpio driver is configured with two values that set the direction of a GPIO line and a mask
+# of GPIO lines that are being used.
+# gpio pins ( not rpi pins! )
+# 2 2  2 2 2 2  2 2 1 1  1 1 1 1  1 1 1 1
+# 7 6  5 4 3 2  1 0 9 8  7 6 5 4  3 2 1 0  9 8 7 6  5 4 3 2  (gpio1 & 0 are not used)
+
+# 1 0  1 1 1 1  0 0 0 1  1 0 1 1  0 0 1 1  1 1 0 0  0 1 1 1  dir     mask (0 means in   1 means out)
+# 0 0  0 0 0 0  1 1 0 0  0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0  exclude mask (0 means use  1 means dont use)
+
+# 0x2f1b3c7 dir
+# 0x00c0000 msk
+loadrt hal_pi_gpio dir=49394631 exclude=786432
+
+# beware gpio 21 and 22 are still reversed, they control rpins 15&50 and are backwards almost everywhere in rpi docs
+# easy to see and check with 'show pins hal_pi_gpio*
+
+# The hardware from the PCB is configured as follows:
+
+# GPIO | Pn | PCB SIG | CUSTOM_FUNCTION
+#
+#   0  | 27 | Unused  |
+#   1  | 28 | Unused  |
+#   2  |  3 | OUT16   |
+#   3  |  5 | OUT15   | Spindle PWM
+#   4  |  7 | OUT14   |
+#   5  | 29 | IN2     | SPINDLE POSITION
+#   6  | 31 | IN3     | LIMIT
+#   7  | 26 | IN1     | SPINDLE INDEX
+#   8  | 24 | OUT1    | X Enable
+#   9  | 21 | OUT4    |
+
+#  10  | 19 | OUT5    | Z Enable
+#  11  | 23 | OUT2    | X DIR
+#  12  | 32 | IN4     |
+#  13  | 33 | IN5     |
+#  14  |  8 | OUT13   |
+#  15  | 10 | OUT12   |
+#  16  | 36 | IN7     |
+#  17  | 11 | OUT11   |
+#  18  | 12 | OUT10   |
+#  19  | 35 | IN6     |
+
+#  20  | 38 | Unused  |
+#  21  | 40 | Unused  |
+#  22  | 15 | OUT8    |
+#  23  | 16 | OUT7    | Z STEP
+#  24  | 18 | OUT6    | Z DIR
+#  25  | 22 | OUT3    | X STEP
+#  26  | 37 | IN8     |
+#  27  | 13 | OUT9    |
+
+loadrt stepgen step_type=0,0,0
+
+# DEBOUNCE Probe und Limits
+loadrt debounce cfg=4
+setp debounce.0.delay 10
+addf debounce.0 base-thread
+
+addf hal_pi_gpio.read  base-thread
+addf stepgen.make-pulses base-thread
+addf charge-pump base-thread
+addf hal_pi_gpio.write base-thread
+addf not.0 servo-thread
+addf not.1 servo-thread
+addf abs.0 servo-thread
+addf scale.0 servo-thread
+addf lowpass.0 servo-thread
+addf stepgen.capture-position servo-thread
+addf motion-command-handler servo-thread
+addf motion-controller servo-thread
+addf stepgen.update-freq servo-thread
+
+# In order to have spindle feedback we need to use the encoder functions
+# See the Spindle Feedback section of the docs: https://linuxcnc.org/docs/html/examples/spindle.html
+
+loadrt encoder num_chan=1
+addf encoder.update-counters base-thread
+addf encoder.capture-position servo-thread
+
+loadrt pwmgen output_type=0
+addf pwmgen.update servo-thread
+addf pwmgen.make-pulses base-thread
+
+# Set the spindle's top speed in RPM
+setp pwmgen.0.scale 2000
+
+# Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
+setp pwmgen.0.pwm-freq 10
+
+net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
+net spindle-on spindle.0.on => pwmgen.0.enable
+net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
+
+# The standard Denford Orac position disc has 48 pulses per revolution
+setp encoder.0.position-scale 48
+
+# This is not a quadrature encoder (with A and B signals) so we use just a simple counter mode
+setp encoder.0.counter-mode true
+
+# Connect the HAL encoder outputs to LinuxCNC
+net spindle-position encoder.0.position => spindle.0.revs
+net spindle-velocity encoder.0.velocity => spindle.0.speed-in
+net spindle-index-enable encoder.0.index-enable => spindle.0.index-enable
+
+# Hook the spindle encoder HAL to the physical pins
+net spindle-phase-a encoder.0.phase-A <= hal_pi_gpio.pin-29-in
+net spindle-phase-b encoder.0.phase-B
+net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
+
+# Convert revolutions per second (RPS) to revolutions per minute (RPM)
+setp scale.0.gain 60
+net spindle-velocity => scale.0.in
+net spindle-velocity-rpm <= scale.0.out
+
+# load a near component and attach it to a thread
+loadrt near
+addf near.0 servo-thread
+
+# connect one input to the commanded spindle speed
+net spindle-cmd => near.0.in1
+
+# connect one input to the encoder-measured spindle speed
+net spindle-velocity => near.0.in2
+
+# connect the output to the spindle-at-speed input
+net spindle-at-speed spindle.0.at-speed <= near.0.out
+
+# set the spindle speed inputs to agree if within 1%
+setp near.0.scale 1.01
+
+# Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
+# net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
+
+# Stepper signal setup
+net xenable => not.0.in
+net notxenable not.0.out => hal_pi_gpio.pin-24-out
+net xdir  stepgen.0.dir  => hal_pi_gpio.pin-23-out
+net xstep stepgen.0.step => hal_pi_gpio.pin-22-out
+
+net zenable => not.1.in
+net notzenable not.1.out => hal_pi_gpio.pin-19-out
+net zstep stepgen.1.step => hal_pi_gpio.pin-16-out
+net zdir  stepgen.1.dir  => hal_pi_gpio.pin-18-out
+
+# i use GPIO 17 27 22 for xlim ylim zlim , thats rpins  11,13,15 resp
+# ( one signal used 3 ways, used for + and - lims, used for home also )
+# now add limits and homing for x
+net xlimit-switch hal_pi_gpio.pin-32-in => debounce.0.0.in
+net xlim debounce.0.0.out => joint.0.neg-lim-sw-in joint.0.pos-lim-sw-in joint.0.home-sw-in
+
+# now add limits and homing for z
+net zlimit-switch hal_pi_gpio.pin-33-in => debounce.0.1.in
+net zlim debounce.0.1.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
+
+setp stepgen.0.position-scale [JOINT_0]SCALE
+setp stepgen.0.steplen 1000
+setp stepgen.0.stepspace 1000
+setp stepgen.0.dirhold 10000
+setp stepgen.0.dirsetup 1000
+setp stepgen.0.maxaccel [JOINT_0]STEPGEN_MAXACCEL
+net xpos-cmd joint.0.motor-pos-cmd => stepgen.0.position-cmd
+net xpos-fb stepgen.0.position-fb => joint.0.motor-pos-fb
+net xstep <= stepgen.0.step
+net xdir <= stepgen.0.dir
+net xenable joint.0.amp-enable-out => stepgen.0.enable
+
+setp stepgen.1.position-scale [JOINT_1]SCALE
+setp stepgen.1.steplen 1000
+setp stepgen.1.stepspace 1000
+setp stepgen.1.dirhold 10000
+setp stepgen.1.dirsetup 1000
+setp stepgen.1.maxaccel [JOINT_1]STEPGEN_MAXACCEL
+net zpos-cmd joint.1.motor-pos-cmd => stepgen.1.position-cmd
+net zpos-fb stepgen.1.position-fb => joint.1.motor-pos-fb
+net zstep <= stepgen.1.step
+net zdir <= stepgen.1.dir
+net zenable joint.1.amp-enable-out => stepgen.1.enable
+
+net estop-out <= iocontrol.0.user-enable-out
+net estop-out => iocontrol.0.emc-enable-in
+
+loadusr -W hal_manualtoolchange
+net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
+net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
+net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
+net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
+
