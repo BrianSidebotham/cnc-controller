@@ -76,6 +76,9 @@ loadrt hal_pi_gpio dir=49394631 exclude=786432
 
 loadrt stepgen step_type=0,0,0
 
+# load a near component and attach it to a thread for spindle control
+loadrt near
+
 # DEBOUNCE Probe und Limits
 loadrt debounce cfg=4
 setp debounce.0.delay 10
@@ -95,6 +98,7 @@ addf motion-command-handler servo-thread
 addf motion-controller servo-thread
 addf stepgen.update-freq servo-thread
 addf sum2.0 servo-thread
+addf near.0 servo-thread
 
 # In order to have spindle feedback we need to use the encoder functions
 # See the Spindle Feedback section of the docs: https://linuxcnc.org/docs/html/examples/spindle.html
@@ -138,35 +142,25 @@ setp encoder.0.counter-mode true
 # Connect the HAL encoder outputs to LinuxCNC
 net spindle-position           encoder.0.position        spindle.0.revs
 net spindle-index-enable       encoder.0.index-enable    spindle.0.index-enable
-net spindle-velocity           encoder.0.velocity        scale.0.in
+net spindle-velocity           encoder.0.velocity        scale.0.in                 near.0.in2
 
 # Hook the spindle encoder HAL to the physical pins
 net spindle-phase-a            encoder.0.phase-A         hal_pi_gpio.pin-29-in
 net spindle-phase-b            encoder.0.phase-B
 net spindle-index              encoder.0.phase-Z         hal_pi_gpio.pin-26-in
 
-net spindle-velocity-rpm       pid.0.feedback            spindle.0.speed-in    scale.0.out
-net pid_command                pid.0.command             spindle.0.speed-out   sum2.0.in0
+net spindle-velocity-rpm       pid.0.feedback            spindle.0.speed-in         scale.0.out
+net pid_command                pid.0.command             spindle.0.speed-out        sum2.0.in0          near.0.in1
 net pid_output                 pid.0.output              sum2.0.in1
 
 net pwmgen_value               pwmgen.0.value            sum2.0.out
 net pwmgen_pwm                 pwmgen.0.pwm              hal_pi_gpio.pin-05-out
 
-# load a near component and attach it to a thread
-loadrt near
-addf near.0 servo-thread
-
-# connect one input to the commanded spindle speed
-net spindle-cmd => near.0.in1
-
-# connect one input to the encoder-measured spindle speed
-net spindle-velocity => near.0.in2
+# set the spindle speed inputs to agree if within 5%
+setp near.0.scale 1.05
 
 # connect the output to the spindle-at-speed input
-net spindle-at-speed spindle.0.at-speed <= near.0.out
-
-# set the spindle speed inputs to agree if within 1%
-setp near.0.scale 1.01
+net spindle-at-speed           spindle.0.at-speed       near.0.out
 
 # Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
 # net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
