@@ -98,18 +98,18 @@ addf stepgen.update-freq servo-thread
 # See the Spindle Feedback section of the docs: https://linuxcnc.org/docs/html/examples/spindle.html
 
 loadrt encoder num_chan=1
-addf encoder.update-counters base-thread
-addf encoder.capture-position servo-thread
+addf encoder.update-counters   base-thread
+addf encoder.capture-position  servo-thread
 
 loadrt pwmgen output_type=0
-addf pwmgen.update servo-thread
-addf pwmgen.make-pulses base-thread
+addf pwmgen.update             servo-thread
+addf pwmgen.make-pulses        base-thread
 
 # Set the spindle's top speed in RPM
-setp pwmgen.0.scale 2000
+setp pwmgen.0.scale            2000
 
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
-setp pwmgen.0.pwm-freq 10
+setp pwmgen.0.pwm-freq         10
 
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
 net spindle-on spindle.0.on => pwmgen.0.enable
