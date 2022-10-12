@@ -1173,7 +1173,7 @@
     (property "Reference" "R94" (id 0) (at 232.6132 89.2048 90)
       (effects (font (size 0.9906 0.9906)) (justify left))
     )
-    (property "Value" "1k5" (id 1) (at 232.6132 91.1098 90)
+    (property "Value" "2k" (id 1) (at 232.6132 91.1098 90)
       (effects (font (size 0.9906 0.9906)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric" (id 2) (at 231.14 90.17 0)
