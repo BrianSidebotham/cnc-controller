@@ -6,6 +6,11 @@ This directory contains HAL files for the hardware in this project and specifica
 
 Download the Linux CNC 2.9.8 RPI4 or RPI5 image with PREEMPT_RT from the linuxcnc downloads section
 
+> [!NOTE]
+> The difference between an RPi4 and RPi5 here is significant. I highly recommend you use an
+> RPi5 for a linuxcnc machine using this configuration and image, but I have run LinuxCNC 2.9.3
+> like this on an RPi4 for a couple of years so it certainly does work.
+
 Write the image to an SD card by extracting it and then writing to the SD card
 
 > [!WARN]
