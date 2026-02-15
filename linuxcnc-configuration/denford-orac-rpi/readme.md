@@ -40,6 +40,27 @@ cd /home/cnc/cnc-controller/linuxcnc-configuration/denford-orac-rpi/
 ./linuxcnc.sh
 ```
 
+## LatheMacros Python Dependencies (Debian Trixie)
+
+If the Cycles tab fails with `ValueError: Namespace Rsvg not available`, install the required **system** packages (no venv required):
+
+```sh
+sudo apt update
+sudo apt install -y python3-gi gir1.2-rsvg-2.0 python3-cairo
+```
+
+Optional (removes the non-fatal GTK warning `Failed to load module "canberra-gtk-module"`):
+
+```sh
+sudo apt install -y libcanberra-gtk-module libcanberra-gtk3-module
+```
+
+Quick verification:
+
+```sh
+python3 -c "import gi, cairo; gi.require_version('Rsvg','2.0'); from gi.repository import Rsvg; print('OK: Rsvg + cairo available')"
+```
+
 So if you so happen to have a Denford Orac then this'll _just work_.
 
 ## Stepper Motor Scales
