@@ -154,7 +154,7 @@ net pid_command                pid.0.command             spindle.0.speed-out    
 net pid_output                 pid.0.output              sum2.0.in1
 
 net pwmgen_value               pwmgen.0.value            sum2.0.out
-net pwmgen_pwm                 pwmgen.0.pwm              hal_pi_gpio.pin-05-out
+net pwmgen_pwm                 pwmgen.0.pwm              hal_pi_gpio.pin-03-out
 
 # set the spindle speed inputs to agree if within 5%
 setp near.0.scale 1.10
@@ -163,8 +163,8 @@ setp near.0.scale 1.10
 # connect the output to the spindle-at-speed input
 net spindle-at-speed           spindle.0.at-speed       near.0.out
 
-# Optionally use something for a spindle enable
-net spindle-enable             spindle.0.on             hal_pi_gpio.pin-7-out
+# Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
+# net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
 
 # Stepper signal setup
 net xenable => not.0.in
