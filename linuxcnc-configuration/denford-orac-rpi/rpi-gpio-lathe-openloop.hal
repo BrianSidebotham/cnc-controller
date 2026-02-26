@@ -107,11 +107,12 @@ addf pwmgen.make-pulses        base-thread
 
 # Set the spindle's top speed in RPM
 # When CFW300 Parameter on Denford Orac is set to 75Hz, the max speed is this
-setp pwmgen.0.scale            1250
+setp pwmgen.0.scale            1574.4
 
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq         10
-#setp pwmgen.0.offset           0.025
+# Calibrated from measured points: S1600->1600, S250->370
+setp pwmgen.0.offset           -0.0163
 
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
 net spindle-on spindle.0.on => pwmgen.0.enable hal_gpio.GPIO4-out

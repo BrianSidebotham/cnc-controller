@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=CNC Startup
-Exec=/home/cnc/cnc-controller/linuxcnc-configuration/denford-orac-rpi/linuxcnc.sh
-X-GNOME-Autostart-enabled=true
