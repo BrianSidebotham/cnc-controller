@@ -31,47 +31,46 @@ net charge-pump <= charge-pump.out
 # 1 0  1 1 1 1  0 0 0 1  1 0 1 1  0 0 1 1  1 1 0 0  0 1 1 1  dir     mask (0 means in   1 means out)
 # 0 0  0 0 0 0  1 1 0 0  0 0 0 0  0 0 0 0  0 0 0 0  0 0 0 0  exclude mask (0 means use  1 means dont use)
 
-# 0x2f1b3c7 dir
-# 0x00c0000 msk
-loadrt hal_pi_gpio dir=49394631 exclude=786432
+loadrt hal_gpio inputs=GPIO5,GPIO6,GPIO7,GPIO12,GPIO13,GPIO16,GPIO19,GPIO26 outputs=GPIO2,GPIO3,GPIO4,GPIO8,GPIO9,GPIO10,GPIO11,GPIO14,GPIO15,GPIO17,GPIO18,GPIO22,GPIO23,GPIO24,GPIO25,GPIO27 invert=GPIO4
 
 # beware gpio 21 and 22 are still reversed, they control rpins 15&50 and are backwards almost everywhere in rpi docs
 # easy to see and check with 'show pins hal_pi_gpio*
 
 # The hardware from the PCB is configured as follows:
 
-# GPIO | Pn | PCB SIG | CUSTOM_FUNCTION
+# GPIO | info   | Pn | PCB SIG | CUSTOM_FUNCTION
 #
-#   0  | 27 | Unused  |
-#   1  | 28 | Unused  |
-#   2  |  3 | OUT16   |
-#   3  |  5 | OUT15   | Spindle PWM
-#   4  |  7 | OUT14   |
-#   5  | 29 | IN2     | SPINDLE POSITION
-#   6  | 31 | IN3     | LIMIT
-#   7  | 26 | IN1     | SPINDLE INDEX
-#   8  | 24 | OUT1    | X Enable
-#   9  | 21 | OUT4    |
+#   0  | ID_SDA | 27 | Unused  |
+#   1  | ID_SCL | 28 | Unused  |
+#   2  | GPIO2  | 3  | OUT16   | PWM CH 2 - Spindle 0-10V
+#   3  | GPIO3  | 5  | OUT15   | PWM CH 1
+#   4  | GPIO4  | 7  | OUT14   | Spindle Enable ( On when HIGH ) - also used as the spindle on signal for the encoder feedback loop
+#   5  | GPIO5  | 29 | IN2     | SPINDLE POSITION
+#   6  | GPIO6  | 31 | IN3     | LIMIT
+#   7  | GPIO7  | 26 | IN1     | SPINDLE INDEX
 
-#  10  | 19 | OUT5    | Z Enable
-#  11  | 23 | OUT2    | X DIR
-#  12  | 32 | IN4     |
-#  13  | 33 | IN5     |
-#  14  |  8 | OUT13   |
-#  15  | 10 | OUT12   |
-#  16  | 36 | IN7     |
-#  17  | 11 | OUT11   |
-#  18  | 12 | OUT10   |
-#  19  | 35 | IN6     |
+#   8  | GPIO8  | 24 | OUT1    | X Enable
+#   9  | GPIO9  | 21 | OUT4    |
+#  10  | GPIO10 | 19 | OUT5    | Z Enable
+#  11  | GPIO11 | 23 | OUT2    | X DIR
+#  12  | GPIO12 | 32 | IN4     | X Limit
+#  13  | GPIO13 | 33 | IN5     | Z Limit
+#  14  | GPIO14 | 8  | OUT13   |
+#  15  | GPIO15 | 10 | OUT12   |
 
-#  20  | 38 | Unused  |
-#  21  | 40 | Unused  |
-#  22  | 15 | OUT8    |
-#  23  | 16 | OUT7    | Z STEP
-#  24  | 18 | OUT6    | Z DIR
-#  25  | 22 | OUT3    | X STEP
-#  26  | 37 | IN8     |
-#  27  | 13 | OUT9    |
+#  16  | GPIO16 | 36 | IN7     |
+#  17  | GPIO17 | 11 | OUT11   |
+#  18  | GPIO18 | 12 | OUT10   |
+#  19  | GPIO19 | 35 | IN6     |
+#  20  | GPIO20 | 38 | Unused  |
+#  21  | GPIO21 | 40 | Unused  |
+#  22  | GPIO22 | 5  | OUT8    |
+#  23  | GPIO23 | 16 | OUT7    | Z STEP
+
+#  24  | GPIO24 | 18 | OUT6    | Z DIR
+#  25  | GPIO25 | 22 | OUT3    | X STEP
+#  26  | GPIO26 | 37 | IN8     |
+#  27  | GPIO27 | 13 | OUT9    |
 
 loadrt stepgen step_type=0,0,0
 
@@ -80,12 +79,13 @@ loadrt debounce cfg=4
 setp debounce.0.delay 10
 addf debounce.0 base-thread
 
-addf hal_pi_gpio.read  base-thread
+addf hal_gpio.read  base-thread
+addf hal_gpio.write base-thread
 addf stepgen.make-pulses base-thread
 addf charge-pump base-thread
-addf hal_pi_gpio.write base-thread
 addf not.0 servo-thread
 addf not.1 servo-thread
+addf not.2 servo-thread
 addf abs.0 servo-thread
 addf scale.0 servo-thread
 addf lowpass.0 servo-thread
@@ -106,14 +106,20 @@ addf pwmgen.update             servo-thread
 addf pwmgen.make-pulses        base-thread
 
 # Set the spindle's top speed in RPM
-setp pwmgen.0.scale            2000
+# When CFW300 Parameter on Denford Orac is set to 75Hz, the max speed is this
+setp pwmgen.0.scale            1574.4
 
 # Set the PWM base frequency in Hz. The filter in the hardware is optimised for 10Hz
 setp pwmgen.0.pwm-freq         10
+# Calibrated from measured points: S1600->1600, S250->370
+setp pwmgen.0.offset           -0.0163
 
 net spindle-speed-cmd spindle.0.speed-out => pwmgen.0.value
-net spindle-on spindle.0.on => pwmgen.0.enable
-net spindle-pwm pwmgen.0.pwm => hal_pi_gpio.pin-05-out
+net spindle-on spindle.0.on => pwmgen.0.enable hal_gpio.GPIO4-out
+#net spindle.0.on => not.2.in
+#net not.2.out => hal_gpio.GPIO4-out
+
+net spindle-pwm pwmgen.0.pwm => hal_gpio.GPIO2-out
 
 # The standard Denford Orac position disc has 48 pulses per revolution
 setp encoder.0.position-scale 48
@@ -127,9 +133,9 @@ net spindle-velocity encoder.0.velocity => spindle.0.speed-in
 net spindle-index-enable encoder.0.index-enable => spindle.0.index-enable
 
 # Hook the spindle encoder HAL to the physical pins
-net spindle-phase-a encoder.0.phase-A <= hal_pi_gpio.pin-29-in
+net spindle-phase-a encoder.0.phase-A <= hal_gpio.GPIO5-in
 net spindle-phase-b encoder.0.phase-B
-net spindle-index encoder.0.phase-Z <= hal_pi_gpio.pin-26-in
+net spindle-index encoder.0.phase-Z <= hal_gpio.GPIO7-in
 
 # Convert revolutions per second (RPS) to revolutions per minute (RPM)
 setp scale.0.gain 60
@@ -141,39 +147,36 @@ loadrt near
 addf near.0 servo-thread
 
 # connect one input to the commanded spindle speed
-net spindle-cmd => near.0.in1
+net spindle-velocity-rpm => near.0.in1
 
 # connect one input to the encoder-measured spindle speed
-net spindle-velocity => near.0.in2
+net spindle-speed-cmd => near.0.in2
 
 # connect the output to the spindle-at-speed input
 net spindle-at-speed spindle.0.at-speed <= near.0.out
 
 # set the spindle speed inputs to agree if within 1%
-setp near.0.scale 1.01
-
-# Optionally use something for a spindle enable TODO: Enable this as CW and also have CCW option too
-# net spindle-enable spindle.0.on => hal_pi_gpio.pin-7-out
+setp near.0.scale 1.15
 
 # Stepper signal setup
 net xenable => not.0.in
-net notxenable not.0.out => hal_pi_gpio.pin-24-out
-net xdir  stepgen.0.dir  => hal_pi_gpio.pin-23-out
-net xstep stepgen.0.step => hal_pi_gpio.pin-22-out
+net notxenable not.0.out => hal_gpio.GPIO8-out
+net xdir  stepgen.0.dir  => hal_gpio.GPIO11-out
+net xstep stepgen.0.step => hal_gpio.GPIO25-out
 
 net zenable => not.1.in
-net notzenable not.1.out => hal_pi_gpio.pin-19-out
-net zstep stepgen.1.step => hal_pi_gpio.pin-16-out
-net zdir  stepgen.1.dir  => hal_pi_gpio.pin-18-out
+net notzenable not.1.out => hal_gpio.GPIO10-out
+net zstep stepgen.1.step => hal_gpio.GPIO23-out
+net zdir  stepgen.1.dir  => hal_gpio.GPIO24-out
 
 # i use GPIO 17 27 22 for xlim ylim zlim , thats rpins  11,13,15 resp
 # ( one signal used 3 ways, used for + and - lims, used for home also )
 # now add limits and homing for x
-net xlimit-switch hal_pi_gpio.pin-32-in => debounce.0.0.in
+net xlimit-switch hal_gpio.GPIO12-in => debounce.0.0.in
 net xlim debounce.0.0.out => joint.0.neg-lim-sw-in joint.0.pos-lim-sw-in joint.0.home-sw-in
 
 # now add limits and homing for z
-net zlimit-switch hal_pi_gpio.pin-33-in => debounce.0.1.in
+net zlimit-switch hal_gpio.GPIO13-in => debounce.0.1.in
 net zlim debounce.0.1.out => joint.1.neg-lim-sw-in joint.1.pos-lim-sw-in joint.1.home-sw-in
 
 setp stepgen.0.position-scale [JOINT_0]SCALE
@@ -208,4 +211,3 @@ net tool-change iocontrol.0.tool-change => hal_manualtoolchange.change
 net tool-changed iocontrol.0.tool-changed <= hal_manualtoolchange.changed
 net tool-number iocontrol.0.tool-prep-number => hal_manualtoolchange.number
 net tool-prepare-loopback iocontrol.0.tool-prepare => iocontrol.0.tool-prepared
-

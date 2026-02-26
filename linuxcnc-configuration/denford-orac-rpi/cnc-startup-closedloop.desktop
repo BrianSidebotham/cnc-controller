@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=CNC Startup ClosedLoop
+Exec=/home/cnc/cnc-controller/linuxcnc-configuration/denford-orac-rpi/linuxcnc-closedloop.sh
+X-GNOME-Autostart-enabled=true

@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=CNC Startup OpenLoop
+Exec=/home/cnc/cnc-controller/linuxcnc-configuration/denford-orac-rpi/linuxcnc-openloop.sh
+X-GNOME-Autostart-enabled=true

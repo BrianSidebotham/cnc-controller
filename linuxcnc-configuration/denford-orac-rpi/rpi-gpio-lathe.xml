@@ -6,7 +6,7 @@
         </label>
         <bar>
             <halpin>"spindle-speed"</halpin>
-            <max_>1800</max_>
+            <max_>2200</max_>
         </bar>
         <hbox>
             <led halpin="spindle-at-speed" on_color="yellow" off_color="black"/>
